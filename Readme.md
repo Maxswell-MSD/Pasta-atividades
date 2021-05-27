@@ -3,6 +3,7 @@
 <br>
 1.Networking e Meetup - Termos Técnicos usados nas empresas
 <br>
+<br>
 2.Pesquisa de empresa que utiliza práticas modernas e inovadoras para se manter competitiva no mercado junto com uma apresentação.
 
 <br>
@@ -11,4 +12,4 @@
 <br>
 <br>
 <br>
-
+<br>
