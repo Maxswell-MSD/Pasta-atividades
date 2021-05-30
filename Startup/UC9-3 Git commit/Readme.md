@@ -3,20 +3,20 @@
 # Pastas dos Exercícios Git commit __UC9-Startup 3/9__ Técnico em Informática Senac-Tatuapé.
 <br>
 <br>
-## Configuração Inicial do repositório local Git.
+#O que é Git?
+Git é um sistema de controle de versão open-source, ou seja, gratuito. Ele é utilizado para a criação de um histórico de alterações em código-fonte de projetos de desenvolvimento de software. Foi desenvolvido por Linus Torvalds, o criador do sistema operacional Linux.<br>
 
-# A Tua Identidade
-A primeira coisa que tu deves fazer ao instalares o Git é configurar o teu nome de utilizador e endereço de e-mail. Isto é importante porque cada comprometimento no Git usa esta informação, e ela é imutavelmente carimbada nos comprometimentos que tu começas a criar:
+Por meio de sua utilização, podemos saber quais foram as alterações realizadas, quem fez cada uma das alterações e baixar essas mudanças em nossa máquina. Se necessário, revertê-las para uma versão anterior.<br>
+<br>
+#O que é GitHub?<br>
+O Github é um repositório remoto, criado como um serviço online de hospedagem de repositórios do Git.
 
-$ git config --global user.name "Fulano de Tal"
-$ git config --global user.email fulanodetal@exemplo.pt
+Funciona como um servidor que agrega todas as modificações realizadas por cada uma das pessoas envolvidas em um projeto, unificando as diferentes versões de código e seus históricos, permitindo compartilhamento entre as equipes.
 
+Além disso, o GitHub também conta com várias integrações com outros serviços online, permitindo o deploy automático de aplicação. Assim, garante a integração contínua e facilita o desenvolvimento.
 
+Nos últimos anos, o GitHub se tornou a principal rede social para o desenvolvimento de software, sendo que existem vários projetos open source hospedados na plataforma, que aceitam a colaboração de qualquer profissional.
 
-
-
-
-
-
+Outro ponto interessante é a sua utilização como currículo. Muitas empresas pedem na entrevista o link do GitHub para verificar seus projetos e entender suas capacidades de programação.
 
 
