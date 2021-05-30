@@ -5,12 +5,13 @@
 <br>
 ## Configuração Inicial do repositório local Git.
 
-*Instalação Em linux Mint Segue os seguintes comandos:
+# A Tua Identidade
+A primeira coisa que tu deves fazer ao instalares o Git é configurar o teu nome de utilizador e endereço de e-mail. Isto é importante porque cada comprometimento no Git usa esta informação, e ela é imutavelmente carimbada nos comprometimentos que tu começas a criar:
 
-< Terminal >
-<br>
-Sudo apt install git
-< yes>
+$ git config --global user.name "Fulano de Tal"
+$ git config --global user.email fulanodetal@exemplo.pt
+
+
 
 
 
