@@ -9,7 +9,7 @@
 2.Pesquisa de empresa que utiliza práticas modernas e inovadoras para se manter competitiva no mercado junto com uma apresentação.
 <br>
 <br>
-3. Git Commit e Integração com Github.
+3. Git, Commit e Integração com Github.
 <br>
 <br>
 <br>
