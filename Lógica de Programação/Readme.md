@@ -4,7 +4,7 @@
 ## Tarefas e Rotinas de exercícios da __UC9-Lógica de Programação 4/9__ Técnico em Informática Senac-Tatuapé
 <br>
 <br>
-*Ferramenta Visualg*
+**Ferramenta Visualg**
 
 1-Cálculo de Média escolar e Condições
 <br>
