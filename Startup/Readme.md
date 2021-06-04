@@ -12,6 +12,9 @@
 3. Git, Commit e Integração com Github.
 <br>
 <br>
+
+## Ainda não feito...<h3>
+4. Trabalho de Inovação captando a criação de uma inovação, Público alvo, Meio de Anúncio da inovação e pitch curto.
 <br>
 <br>
 <br>
