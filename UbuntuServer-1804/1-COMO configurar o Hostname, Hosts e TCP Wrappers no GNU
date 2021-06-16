@@ -1,0 +1,123 @@
+' 
+#######################################___CRIADO POR MAXSWELL-MSD___16/06/2021 ############################################
+****************************************************************************************************************
+................................................................................................................
+################################################################################################################'
+
+Obs: Script criado por Maxswell-MSD técnico em informática.
+Linkedin:
+Github:
+
+==============================================================================================================================================================
+
+COMO configurar o Hostname, Hosts e TCP Wrappers no GNU/Linux Ubuntu Server 18.04.x LTS
+
+#Abra o terminal do Linux e entre remotamente no servidor usando protocolo SSH.
+exemplo:
+sudo -i  <! Na primeira vez devemos entrar no modo root -->
+ssh max@172.16.22.20  <!-- Coloque o nome e o IP do servidor -->
+<ENTER>
+<YES>  <!-- Concorde para efetuar a troca das chaves públicas para criptografar -->
+password <!-- Aqui devermos colocar a senha que usamos para logar no servidor web -->
+======================================================================================================================================================================================================================================================
+Ainda no terminal após acessarmos remotamente.
+
+#Devemos atualizar o servidor com os comandos básicos de atualização pelo terminal.
+
+#Comando sudo w ele mostra o nome do usuário, hora e qual máquina ele está usando para acessar remotamente o servidor
+
+exemplo: 
+sudo w
+<ENTER>
+
+# Agora devermos editar o arquivo do nome do computador com os seguintes comandos.
+
+sudo vim /etc/hostname
+<ENTER>
+<INSART OU I>  <!-- Para entrarmos em modo de edição -->
+webserver.local      <!-- Colocamos o nome seguido do domínio dando um nome FQDN -->
+< ESC+SHIFT+:x >    <!-- Damos esse comando na tela para sair e salvar -->
+
+# Obrigatoriamente após mudar o nome devemos modificar outro dado.
+
+Sudo vim /etc/hosts
+<ENTER>
+<INSART OU I>  <!-- Para entrarmos em modo de edição -->
+#Na terceira linha de cima colocamos abaixo de 127.0.0.1 seguido do nome dado acima colocamos o ip do servidor.
+
+exemplo:
+
+127.0.0.1 localhosts
+127.0.1.1 webserver
+172.16.22.20  + tab seguido do nome FQDN + tab e damos um apelido a aste servidor ou coloque qualquer coisa    <!-- Aqui colocamos os novos dados -->
+
+=====================================================================================================================================================================================================================================================
+
+# Garantia de segurança ao acesso no servidor damos os seguintes comandos para impedir um acesso indevido ao servidor e vai criar arquivos no final de log para armazenar todas as informações.
+
+sudo vim /etc/hosts.deny
+<ENTER>
+# negando as aplicações DE TODOS OS ENDERÇO IP DE TODAS AS REDES
+<INSART OU I>  <!-- Para entrarmos em modo de edição -->
+ALL: ALL: spawn /bin/echo "$(date) Conexão recusada - IP%a" >> /var/log/hosts.deny.log
+< ESC+SHIFT+:x >    <!-- Damos esse comando na tela para sair e salvar -->
+<ENTER>
+
+# Agora vamos permitir a sua rede local acessar o servidor de SSH.
+# No endereço sshd podemos permitir todos colocando somente a subrede mas caso queira permitir uma máquina específica colocamos o hosts da máquina. 
+
+sudo vim /etc/hosts.allow
+<ENTER>
+<INSART OU I>  <!-- Para entrarmos em modo de edição -->
+sshd: 172.16.22. spawn /bin/echo "$(date) Conexão Liberada - IP%a" >> /var/log/hosts.allow.log
+< ESC+SHIFT+:x >    <!-- Damos esse comando na tela para sair e salvar -->
+<ENTER>
+
+# Para finalizar editaremos o arquivo importante do nsswitch que se localiza na linha hosts  files dns   -> é importante esse arquivo aparecer 
+
+sudo vim /etc/nsswitch.config
+<ENTER>
+< ESC+SHIFT+:q! >    <!-- Damos esse comando na tela para sair sem salvar -->
+
+#Agora renicialize o servidor com comando sudo reboot ou sudo init 6.
+
+#Agora entraremos no linux pelo terminal e vamos verificar se temos acesso ao servidor
+
+
+#Abra o terminal do Linux e entre remotamente no servidor usando protocolo SSH.
+exemplo:
+sudo -i  <! Na primeira vez devemos entrar no modo root -->
+ssh max@172.16.22.20  <!-- Coloque o nome e o IP do servidor -->
+<ENTER>
+<YES>  <!-- Concorde para efetuar a troca das chaves públicas para criptografar -->
+password <!-- Aqui devermos colocar a senha que usamos para logar no servidor web -->
+=============================================================================================================================================================================================================================================
+
+#Agora faremos as verificações básicas com os seguintes comandos.
+
+sudo hostname    <!-- Verificando o nome do servidor -->
+password         <!-- Coloque a senha do servidro -->
+sudo hostname -A    <!-- Para mostrar o nome FQDN -->
+sudo hostname -d  <!-- Para mostrar somente o nome do domínio -->
+sudo cat /var/log/hosts.allow.log  <!-- Verificando se o arquivo de log foi criado -->
+sudo w             <!-- Para verificarmos o que acaba de ser logado -->
+
+# Importante para manter o acesso remoto em segurança do servidor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
