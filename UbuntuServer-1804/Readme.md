@@ -1,5 +1,9 @@
 ![maximus](https://github.com/Maxswell-MSD/Pasta-atividades/blob/main/Imagem/Maximus.jpg)
 <br>
+Obs: Script criado por Maxswell-MSD técnico em informática.
+Linkedin:https://www.linkedin.com/in/maxswell-sousa-diniz-59638b194
+Github:https://www.github.com/Maxswell-MSD
+<br>
 # Anotações de configuração do Ubuntu-server, Técnico em Informática Senac-Tatuapé
 
 
