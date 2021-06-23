@@ -23,11 +23,11 @@ total<- Qtde * valor_unit
 escreval (" O valor total do produto é de" , total)
 
 se (total < 200) entao
-reaj1<- (total*reaj1+total)
-escreva (" O valor a ser pago é de", Reaj1)
+reajustado<- (total*reaj1+total)
+escreva (" O valor reajustado a ser pago é de", Reajustado)
 senao (total > 200) entao
-reaj2<- (total*reaj2+total)
-escreva (" O valor a ser pago é de", Reaj2)
+reajustado<- (total*reaj2+total)
+escreva (" O valor reajustado a ser pago é de", reajustado)
 
 fimse
 
