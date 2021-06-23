@@ -13,6 +13,11 @@ Inicio
 reaj1<- 1/100     // Atribuição de valor fixo
 reaj2<- 2/100
 
+Escreval (" ################## APRESENTAÇÃO MAXIMUS ################")// VAI MOSTRAR NA TELA
+ESCREVAL ("--------------Aplicação de Reajuste de Produtos--------")
+ESCREVAL ("") // vAI DAR ENTER E PULAR LINHA
+
+
 escreval (" Coloque o Produto:")
 leia (Produto)
 escreval (" Qual o valor unitário do produto:")
