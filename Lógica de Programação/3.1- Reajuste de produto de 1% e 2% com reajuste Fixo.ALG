@@ -10,7 +10,7 @@ produto: caractere
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-reaj1<- 1/100
+reaj1<- 1/100     // Atribuição de valor fixo
 reaj2<- 2/100
 
 escreval (" Coloque o Produto:")
@@ -22,10 +22,10 @@ leia (Qtde)
 total<- Qtde * valor_unit
 escreval (" O valor total do produto é de" , total)
 
-se (total <=200) entao
+se (total < 200) entao
 reaj1<- (total*reaj1+total)
 escreva (" O valor a ser pago é de", Reaj1)
-senao (total >=200) entao
+senao (total > 200) entao
 reaj2<- (total*reaj2+total)
 escreva (" O valor a ser pago é de", Reaj2)
 
