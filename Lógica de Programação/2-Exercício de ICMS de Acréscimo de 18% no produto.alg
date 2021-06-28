@@ -31,5 +31,5 @@ escreval ("Valor do seu pedido: ",produ_atua)
 
 
 
-Escreva
+
 fimalgoritmo

@@ -153,7 +153,7 @@ senao
 // cálculo de vale transporte
 
 escreval ("")
-Escreval ("-------------------CÁLCULO DE VALE TRANSPORT----- --------------")
+Escreval ("-------------------CÁLCULO DE VALE TRANSPORTE----- --------------")
 ESCREVAL ("")
 
 
