@@ -1,0 +1,40 @@
+body {
+  background-color: rgba(30, 168, 161, 0.959);
+}
+
+h1 {
+  /*vamos aplicar a letra arial*/
+  font-family: "arial";
+  /*vamos alterar o tamanho do texto para 20pt*/
+  font-size: 20pt;
+  /* alterar a cor da letra */
+  color: white;
+  /* alinhar o texto ao centor na horizontal*/
+  text-align: center;
+}
+
+p {
+  /*Para editar o texto fazemos quase a mesma coisa*/
+  font-family: "verdana";
+  font-size: 15pt;
+  color: white;
+  text-align: center;
+
+  /*Como colar uma margem do texto do lado direito e esquerdo
+  isso fará com que o texto fique mais ajustado ao centro da tela*/
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Agora para formatar a imagem de posição e tamanho*/
+
+img {
+  /*Ajustando o tamaho da largura com comando width para qualquer aplicação
+  usamos esse comando, conforme o tamanho da imagem for muito grande ou ajustada pelo css pesara no tempo de carregação
+  o ideal é aprontar imagem em photoshop etc*/
+
+  /*Usando porcentagem a imagem estica conforme diminuir o tamanho do navedador se deixa porcentagem junto com altura px*/
+  width: 80%;
+  /*indicamos para ajustarmos na tela mas não é padrão*/
+  height: auto;
+}
