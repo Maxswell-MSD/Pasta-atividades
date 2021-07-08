@@ -1,4 +1,4 @@
-<! Instalação do CID para fazer a integração do Linux no dominio do Windows server.
+<! Instalação do Dir para fazer a integração do Linux no dominio do Windows server.
 
 Preparando o Linux Ubuntu
 
@@ -32,7 +32,7 @@ dando o comando insert para entrar em modo de edição ou a letra i. e colocamos
 OBS: A REDE DEVE SER INTERNA APÓS INSTALAR O DIR
 # Pesquise a palavra Dir no Linux
 
-# Entre no CID sem ser o Password
+# Entre no Dir sem ser o Password
 
 <AVANÇA>
 
