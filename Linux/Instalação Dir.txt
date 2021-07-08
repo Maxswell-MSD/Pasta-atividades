@@ -25,7 +25,8 @@ após a instalação do vim, devemos diminuir o nome do computador para menos de
 
 # sudo vim /etc/hostname
 
-dando o comando insert para entrar em modo de edição ou a letra i. e colocamos o nome reduzido. após esse procedimento devemos sair com Esc+shift+:x para sair e salver e damos o reboot na máquina.
+dando o comando insert para entrar em modo de edição ou a letra i. e colocamos o nome reduzido. após esse procedimento devemos sair com Esc+shift+:x para sair e salve. 
+# sudo reboot 
 
 
 OBS: A REDE DEVE SER INTERNA APÓS INSTALAR O DIR
@@ -44,6 +45,7 @@ OBS: A REDE DEVE SER INTERNA APÓS INSTALAR O DIR
 
 agora sim entramos no software Dir e colocamos as credenciais.
 
-Durante o processo, o instalador do Kerberos solicitará o domínio da sua rede (domínio do Active Directory). Insira este dado com todas as letras maiúsculas, conforme exemplo abaixo:
+# Agora basta concordar com os termos e logar com qualquer usuário do domínio
+
 
 site:https://daniel.scota.com.br/?p=1582 
