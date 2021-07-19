@@ -1,0 +1,47 @@
+/* A aplicação do asterisco(*) no arquivo de CSS informa ao navegados
+ que TODOS os elementos da tela receberão esta formatação */
+* {
+  margin: 0; /*estamos zerando as margens externas dos elementos*/
+  padding: 0; /*estamos zerando as margens internas dos elementos*/
+}
+
+/* Vamos aplicar na tag header cor de fundo e padding */
+header {
+  /* background-color: #dd2c00; */
+  background-image: url("../img/fundo1.jpg");
+  background-size: 100%;
+  background-position: 0 -650px;
+  padding-top: 150px;
+  transition: all 2s; /*Efeito de animação com trasition. Efeito ease com tem
+                        de 2s*/
+}
+/* formatar a tag h1 que está dentro do header. Veja como fazemos */
+
+header h1 {
+  color: rgb(255, 247, 247); /*cor da letra*/
+  font-family: "arial black"; /*mudar o tipo da letra para arial*/
+  text-align: center; /*alinhamento do texto ao centro*/
+}
+
+header nav {
+  background-color: #600;
+  text-align: center;
+  padding: 5px;
+}
+
+header nav ul li {
+  /* exibir os itens da lista um ao lado do outro. Usaremos
+  o comando display(tela|exibir) inline-block(blocos em linha) */
+  display: inline-block;
+  margin: 5px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-family: arial;
+  text-decoration: none; /*retirar a decoração do texto, ou seja, tirar o underline*/
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
