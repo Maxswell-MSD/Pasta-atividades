@@ -1,94 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação e imagem</title>
-    <!-- Essa é uma maneira de aplicar o css mas ele fica fixo nesse html ele não é flexivel-->
 
-    <style>
-        * {
-            font-family: "arial";
+<style>
+    /* Embeded */
+    /* vamos aplicar o comando *(asterisco) para referenciar
+    todos os elementos da página e aplicar a mesma formatação
+    css para todos. */
+    *{
+        font-family: "arial";
+        /* retirar todas margens externas dos elementos */
+        margin:0;
 
-            margin: 0;
+        /* retirar/zerar todas margens internas dos elementos */
+        padding:0;
+    }
 
-            padding: 0;
-        }
+    header{
+        /*background-color: red;*/
+        background-color: rgb(	0,191,255, 0.9);
+        /* background-color: rgb(214, 196, 65); */
+        /* background-color: hsl(80, 50%, 20%); */
+        padding-top:30px;
+        padding-bottom: 30px;
+       
+    }
+    h1{
+        font-size:100pt;
+        color:#fff;
+        text-align: center;
+    }
+    h2{
+        margin: 50px;
+    }
+    p{
+        background-color: rgba(0,191,255, 0.8);
+        margin-left: 200px;
+        margin-right: 200px;
+        padding:50px;
+        /* Para aumenta a distância entre as linhas do texto    
+        iremos usar o comandos line-height(altura da linha).
+        Este comando é similar ao comando de espaçamento 
+        entre linhas do Microsoft Word */
+        line-height: 30pt;
 
-        header {
-            /*  FORMAS DIFERENTE DE APLICAR CORES */
-            /*background-color:red;*/
-            background-color: #ff6f00;
-            /*background-color:rgb(214, 196, 65);*/
-            /*background-color:hsl (80, 50%, 20%);
-        } 
-        
-        h1{
-            font-size:100pt;
-            color: #fff;
-            text-align: center;
-        }
-        h2{
-            margin:50px
-        }
-        p{
-            background-color: #ff6f00;
-            margin-left:200px;
-            margin-right:200px;
-            padding-right:20px;
-            padding-left:20px;
-        }
-        
-            
-        
-            
+        /* Para realizar a indentação do paragrafo, fazendo o texto iniciar mais a frente */
+        text-indent: 100px;
+        text-align: justify;
+    }
+
+
+    body{
+        background-image: url("img/windows11.jpg");
+    }
 
 
 
-
-
-      
-    </style>
+</style>
 </head>
-
 <body>
+    
+<header>
+    <h1> Formatação e imagem</h1>
+</header>
 
-    <header>
-        <h3>formataçao e imagem</h3>
-    </header>
-    <main>
-        <h2>Bem vindo</h2>
-        <p></p>
-        <p></p>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi debitis quia at nam dignissimos velit
-            quo
-            quam voluptate, tempora consequatur. Enim, voluptatum. Laborum neque sequi ex nulla quae facere?
-            Possimus enim rem soluta provident eos. Exercitationem, eaque fugit vero suscipit ipsam cum eveniet qui quos
-            quisquam porro expedita? Ad maxime odio nobis iusto autem odit excepturi culpa! Corporis, doloribus?
-            Asperiores quisquam, voluptatibus molestiae officia et doloribus perspiciatis dolor sit vitae harum
-            veritatis,
-            voluptatem, excepturi rerum? Maiores, ducimus nesciunt alias cumque blanditiis architecto non, velit
-            doloribus
-            provident in cupiditate consectetur!
-            A consequuntur eligendi quidem porro iste praesentium reiciendis hic animi repellendus magnam, facere,
-            doloremque sit cum ad exercitationem labore voluptate est quisquam adipisci culpa delectus odio expedita!
-            Est,
-            cumque odit.
-            Soluta nihil mollitia esse ab id vero quos eveniet perspiciatis minus eligendi rerum non dolores delectus
-            quidem
-            voluptatum dolorum nostrum eos quibusdam debitis nemo voluptatem neque, blanditiis officia optio!
-            Hic!</span></p>
-    </main>
-    <footer>
+<main>
+    <h2>Bem Vindo</h2>
+    <p><span>A Microsoft anunciou oficialmente em junho o Windows 11, novo sistema operacional da empresa para PCs. Embora a versão final esteja planejada para o segundo semestre, usuários interessados em experimentar as novidades da plataforma já podem instalar uma prévia do Windows 11 – confira abaixo os requisitos técnicos e o que você precisa fazer para começar a testar o novo sistema operacional.
 
-    </footer>
+        No fim de junho, a Microsoft começou a disponibilizar as prévias do Windows 11. Com recursos limitados – sem, por exemplo, integração com Teams ou apps do Android -, essas versões são voltadas para entusiastas do sistema operacional. Como não é uma versão finalizada da plataforma, a prévia do sistema pode apresentar bugs e problemas de compatibilidade em algumas máquinas – o que é normal no processo de desenvolvimento.</span>
+    <br>
+        <span>Para fazer download do Windows 11 é necessário se cadastrar no programa Windows Insider (o que é gratuito). Depois, em um PC com Windows 10, siga os seguintes passos:
+
+            Vá até Configurações
+            Depois, entre em Atualização e Segurança
+            Agora, clique em Programa Windows Insider
+            Lá é necessário ativar o canal “Dev”, que contém software ainda em desenvolvimento
+            Não custa lembrar que esta prévia é uma versão muito preliminar do sistema, que não deve ser instalada em máquinas que desempenham funções críticas ou das quais você depende no dia a dia para trabalhar ou estudar. A melhor forma de conhecer as novidades sem riscos é instalar o sistema em um PC “cobaia” – como um notebook antigo, por exemplo.</span></p>
+</main>
+
+<footer>
+
+</footer>
+
 
 
 
 </body>
-
-
-
 </html>
