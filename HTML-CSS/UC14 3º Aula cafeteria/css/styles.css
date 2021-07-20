@@ -92,3 +92,47 @@ footer #redes a img:hover {
   /*Realizar uma rotação de 360 graus nos ícones*/
   transform: rotate(360deg);
 }
+
+/*Após a finalização, salvamos como o link de cada página criada dando nome.html*/
+
+/*Editando o main h2 formatação da página index linha 38 index.html*/
+/*------------- Iniciando a edição da página index ----- */
+
+main h2 {
+  font-family: arial;
+  font-size: 15pt;
+  margin: 25px; /*Para afastar as imagens*/
+  border-bottom: goldenrod 1px solid; /*Colocando linha abaixo do título h2*/
+}
+/*Formatando paragrafo*/
+main p {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: justify; /*Ajustando as linhas para ficarem arrumadas*/
+  font-size: 12pt; /*tamanho da letra do texto*/
+  line-height: 20pt; /*altura da linha, que dá um efeito de espaçamento entre linhas*/
+  margin-bottom: 15px; /* margem na parte inferior de cada paragrafo*/
+  font-family: arial; /*Colocando a fonte do texto*/
+}
+
+/*Modificando as fotos na linha 45 index.html*/
+
+main #imghome {
+  text-align: center; /* colocamos as fotos centralizadas*/
+}
+
+main #imghome img {
+  width: 300px; /*Colocamos a largura da imagem*/
+  height: 300px; /*Colocamos a altura da imagem*/
+  /*Agora vamos arredondar os cantos da imagem com o comando booder-radius
+  o valor pode ser pixel ou porcentagem*/
+  border-radius: 500px; /*Colocando 500 a imagem fica redonda*/
+  margin: 25px; /*Para afastar uma imagem da outra*/
+  opacity: 0.8; /*Damos um efeito de transparência na imagem*/
+  transition: ease 0.5s; /*Colocando efeito na imagem*/
+}
+
+main #imghome img:hover {
+  opacity: 1; /*ao colocar o ponteiro do mouse na imagem ela fica viva a imagem*/
+  transform: scale(1.3); /*Assim a imagem vem para frente*/
+}
