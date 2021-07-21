@@ -162,7 +162,7 @@ main #video iframe {
 main #area,
 main #area #conteudo main #area #conteudo #img,
 main #area #conteudo #texto {
-  border: 2px solid red;
+  /* border: 2px solid red;*/
 }
 main #area #conteudo #img img {
   /* Largura da imagem */
@@ -185,8 +185,7 @@ main #area #conteudo #texto {
 main #area,
 main #area #conteudo {
   display: inline-block;
-  width: 100%;
-  margin: 20px;
+  width: 90%;
 }
 /* Editando texto a linha 60 cardapio.html */
 main #area #conteudo #texto h5 {
@@ -194,6 +193,7 @@ main #area #conteudo #texto h5 {
   font-size: 14pt;
   margin: 5px;
   color: rgb(223, 159, 22);
+  border-bottom: 1px solid silver; /*Colocando linha dividindo os textos*/
 }
 main #area #conteudo #texto span {
   color: #600;
