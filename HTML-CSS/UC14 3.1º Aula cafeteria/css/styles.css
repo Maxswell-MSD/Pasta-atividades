@@ -212,3 +212,12 @@ main h3 {
 }
 
 /* ----------Fim da formatação da página cardápio--------- */
+
+/*---------Inicio da formatação da página de localização ------*/
+
+main #mapa iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/*---------Fim da formatação do mapa--------*/
