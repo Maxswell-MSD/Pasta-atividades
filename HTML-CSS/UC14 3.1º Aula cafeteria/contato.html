@@ -34,8 +34,50 @@
     <!-- Fim da área do header -->
 
     <!-- Início da área do main -->
-    
-    <main></main>
+    <!-- Aqui fazemos a organização de h , dir, imagen, texto  -->
+    <main>
+        <h2>Contato</h2>
+        <!-- Construção do formulário de contato com as tags:
+        Form -> formulário;
+    input -> Caixa para o usuário realizar a entrada de texto; 
+    Input radio -> É um botão de opção;
+    Select -> Menu de seleção;
+    textarea -> Caixa onde o usuário poderá escreve uma mensagem;
+    Input submit -> Botão para o envio dos dados. -->
+
+    <!--  Criando  Formulário -->
+    <form>
+        <!-- Mostrando ao usuário uma caixa que quando o usuário escrever o texto Nome Completo some -->
+        <input type="text" placeholder="Nome Completo" required>
+        
+        <input type="email" placeholder="E-Mail" required>
+        <span>
+            <input type="radio" name="sexo" value="Masculino"> Masculino
+            <input type="radio" name="sexo" value="Feminino"> Feminino
+            <input type="radio" name="sexo" value="Outros"> Outros
+        </span>
+        <!--  Opções para as pessoas colocarem -->
+        <select>
+            <option>Elogio</option>
+            <option>Sugestão</option>
+            <option>Crítica</option>
+            <option>Dúvidas</option>
+            <option>Outros</option>
+
+        </select>
+        <!--  Caixa de preenchimento para que o usuário venha enviar algo???-->
+        <textarea>Mensagem</textarea>
+
+        <input type="submit" value="enviar">
+
+
+
+
+
+    </form>
+
+
+    </main>
 
     <!-- Fim da área do main -->
 
