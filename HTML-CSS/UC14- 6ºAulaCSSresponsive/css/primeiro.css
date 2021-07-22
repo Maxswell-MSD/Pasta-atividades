@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: blue;
+  padding-top: 50px;
+  padding-block: 50px;
+}
+
+h1 {
+  font-family: arial;
+  text-align: center;
+  color: white;
+}
+/*  Formatação para o  nav */
+nav {
+  width: 20%;
+  background-color: red; /*Usando marcação*/
+  padding: 10px;
+}
+/* Colocando para o link fica um do lado do outro */
+nav li {
+  display: inline-block;
+}
+/* Colocando as seções de texto para ficar um ao lado do outro . */
+section {
+  width: 48%;
+  float: left;
+  /* Colocando borda para saber onde começa e onte dermina */
+  border: 2px solid red;
+  /* De acordo com tamanho de tela temos que modificar para fazer um ficar com a margem de diferença */
+  margin: 0.9%;
+}
+
+/* Px são vários pontos coloridos criando uma imagen
+exemplo 1024*768 = 786.432 de pontos na tela . quanto maior for o px melhor é a qualidade de agrupamento nos px que são fixo na tela
+essa imagem não se encolhe se mantem no padrão colocado nisso não é recomendado usar sempre pelo fato de criar barras de navegação
+ou usamos porcentagem.
+*/
+
+/* Se usarmos a porcentagem a a barra de rolagem no rodapé não vai aparecer se trabalhar com porcentagem criando o ambiente
+responsivel */
+
+/* Se tiver usando link talvez o uso da porcentagem não seja interessante mas se pode usar pelo fato do navegador ter uma configuração */

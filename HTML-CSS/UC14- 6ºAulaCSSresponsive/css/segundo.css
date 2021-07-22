@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Aplicando esse modelo tiramos a barra de rolagem */
+}
+
+header {
+  background-color: blue;
+  height: 100px;
+  /* Mudando a forma como a caixa ficará posicionada na tela */
+  position: fixed;
+  width: 100%;
+  padding-left: 25px;
+  color: white;
+}
+
+
+
+
+/* Formatando linha 18 até 21 para ficarem uma ao lado da outra
+ dentro de main segundo.html */
+
+div {
+  width: 24%;
+  float: left;
+  margin: 5px;
+  height: 300px;
+}
+
+/*  Aplicando as cores para cada caixa div da linha 18 até 21 segundo.html */
+#um {
+  background-color: red;
+}
+#dois {
+  background-color: green;
+}
+#tres {
+  background-color: yellow;
+}
+#quatro {
+  background-color: blueviolet;
+}
+
+
+
+
+@media screen and (max-device-width: 768px) {
+    header {
+      background-color: aqua;
+    }
+}
+
+/*Aplicação de mediaquery( Consulta dos formatos:tela(screen); imprimir(print)) com breakpoint (ponto de quebra)
+*/
+
+@media screen and (max-device-width: 1000%px) {
+div {
+    width: 20%;
+  }
