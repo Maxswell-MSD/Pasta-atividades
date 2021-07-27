@@ -1,0 +1,63 @@
+/* Tirando as margens dos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Tratando todas as bordas do navegador para dentro do navegador*/
+}
+/*  Iniciando formatação de tela */
+header {
+  background-color: silver;
+  height: 200px;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* Iniciando as formatações de todas as Div criadas de forma geral */
+main div {
+  width: 23.5%;
+  height: 250px;
+  float: left;
+  margin: 10px;
+}
+main #um {
+  background-color: green;
+}
+main #dois {
+  background-color: yellow;
+}
+main #tres {
+  background-color: red;
+}
+main #quatro {
+  background-color: blue;
+}
+@media (min-width: 0px) and (max-width: 300px) {
+  main div {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (min-width: 301px) and (max-width: 800px) {
+  main div {
+    width: 100%;
+    display: block;
+  }
+  main #um {
+    height: 100px;
+  }
+}
+main #dois {
+  height: 100px;
+}
+@media (min-width: 801px) and (max-width: 1200px){
+    main div {
+        width: 46%;
+        
+
+}
+/* Continuar vídeo 47 */

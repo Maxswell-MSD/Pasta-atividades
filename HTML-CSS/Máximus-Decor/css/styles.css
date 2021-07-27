@@ -1,0 +1,141 @@
+/* Colocando os dados da fonte do google basta escolher uma fonte e colar no header
+
+font-family: 'Assistant', sans-serif;
+font-family: 'Dancing Script', cursive;
+  font-family: "montserrat", sans-serif;
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Colocando as bordas do projeto*/
+}
+body {
+  display: flex; /*As coisas que estiverem no body serão flexivel*/
+  flex-direction: column; /*Colocando todos em uma coluna um abaixo do outro*/
+}
+/* Colocando cor no rodapé */
+header {
+  flex: 1;
+  background-color: #546e7a;
+  color: white;
+  font-family: "montserrat", sans-serif;
+}
+header h1 {
+  /*Editando o títulos e seu posicionamento*/
+  padding-left: 200px;
+  padding-top: 40px;
+}
+/* Fazendo alinhamento dos links ao centro e alinhado */
+header nav {
+  width: 50%; /*Colocando tamanho dos links*/
+  margin-left: auto; /*Colocando margem esquerda automaático*/
+  margin-right: auto; /*Colocando margem direnta automático*/
+  text-align: center; /*Colocando fonte de link centralizado*/
+  margin-top: 40px; /*Aqui vamos empurrar os links para baixo para separar do título*/
+}
+/* Tirando as bolinhas referente aos links */
+header nav ul {
+  list-style: none; /*Tirando as bolas dos links*/
+}
+/* Agora vamos travalhar com os itens dos links das listas */
+header nav ul li {
+  background-color: #eee; /*Colocando cores na caixa dos links para saber o seu posicionamento*/
+  display: inline-block; /*Colocando eles em linha um ao lado do outro*/
+  padding: 20px 70px; /*Colocando tamanho e largura dos links usado padding*/
+  transition: ease 0.5s;
+}
+/* Colocando efeito de cores ao passar o mouse sobre os links de navegação das páginas*/
+
+header nav ul li a {
+  font-family: arial;
+  color: black;
+  text-decoration: none;
+  font-size: 12pt;
+  text-transform: capitalize; /*Aqui colocamos efeito na letra de tamanho na primeira letra ou tudo de uma fonte*/
+}
+/* Passando o mouse no a deve formatar o li */
+header nav ul li:hover {
+  background-color: black;
+}
+header nav ul li:hover > a {
+  color: #546e7a;
+}
+
+/* /////////////// Fim da edição do cabeçalho/////////// */
+
+/* ////////////////////// iniciando formatação do main  /////////////// */
+main {
+  flex: 1;
+}
+/* Ajustando formatação da imagem */
+main #painel {
+  height: 400px;
+  background-image: url("../img/painel3.jpg"); /*Colocando imagem no painel*/
+  background-size: 100%;
+  background-position: 0px -300px; /*Fazendo subir a image */
+}
+/*  Ajustando o rodapé */
+
+footer {
+  flex: 1; /*O flex vai ter uma ocupação nessa tela*/
+  display: flex;
+  flex-direction: row; /* Para os elementos ficarem um ao lado do outro*/
+  background-color: #546e7a;
+  font-family: "montserrat";
+  font-size: 10pt;
+  padding: 50px;
+}
+/*  Agora vamos modificar as redes */
+footer #redes,
+footer #end {
+  flex: 1;
+  color: white;
+  font-size: 20px;
+}
+/*  Agora vamos formatar as imagens das redes sociais */
+footer #end {
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+/* Colocando os icones um ao lado do outro */
+footer #redes ul {
+  list-style: none; /*Tirando as bolinhas do lado dos icones*/
+}
+/* Alinhando um ao lado do outro os icones */
+footer #redes ul li {
+  display: inline-block;
+}
+/* Colocando uma cor diferente nos icones */
+footer #redes ul li a {
+  color: white;
+  text-decoration: none;
+}
+/*  Agora colocando tamanho dos icones */
+footer #redes ul li a {
+  font-size: 40px;
+  color: white;
+  margin: 10px;
+}
+
+/*  Colocando break points responsividade ponto de quebra */
+/* Tela de Smartfones */
+@media (min-width: 0px) and (max-width: 576px) {
+  main div {
+    width: 100%;
+    display: block;
+  }
+}
+/* Telas de tablets */
+@media (min-width: 576px) and (max-width: 767.78px) {
+}
+
+/* Tela de desktop */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header nav {
+    width: 100%;
+  }
+}
