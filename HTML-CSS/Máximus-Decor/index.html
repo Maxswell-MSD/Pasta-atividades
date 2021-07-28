@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máxiums-Decor</title>
+    <!-- Basta pesquisar google fontes  -->
+    <!-- Link de css para a formatação de fontes do google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Dancing+Script:wght@700&family=Notable&display=swap" rel="stylesheet">
+
+  <!-- Link de icones usando fonte https://fontawesome.com  Mas observe sempre a indicação
+de onde deve colocar o link. ele muda conforme o roteiro ou fontes de outros sites-->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+      
+
+    <!-- Link de css para o arquivo styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--  CSS Embed  o que está aqui só é da página index não vai para outras-->
+    <style>
+        main{
+            background-image: url("img/sala5.jpg");
+            /* fixa a imagen ao fundo da tela quando usar a barra de rolagem
+            a imagem não movimenta junto*/
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <!-- <i class="fab fa-instagram-square"></i> esse é o link original do icone está documentado para usar um melhor tamanho-->
+
+    <!--  Seguindo a linha 15 integração de icones aqui entramos no fontawesome
+    e selecionamos um icone e colocamos o seu link aqui dentro do body para modificar
+basta trocar os nomes dos icones dentro do link. e se o icone ficar pequeno complete o link com
+<i class="fab fa-instagram" style="font-size:50pt"></i>  fazendo a escolha de tamanho e cor, mas vamos fazer isso pelo CSS  -->
+<!-- <i class="fab fa-instagram" style="font-size:50pt; color:fuchsia"></i> -->
+
+<!-- Usaremos esses atalhos para a construção do corpo de ferramentas header>h1+nav>ul>li*3>a -->
+<header>
+    <h1>Máximus Decor</h1>
+    <!-- colocando botão  de navegação usando a font de icones -->
+    <span id="menu">
+        <!-- ComaNDO JAVA PARA ABRIR O MENU NO CLICAR -->
+        <i class="fas fa-ellipsis-v"onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>
+        
+    </span>
+    <nav>
+        <!-- usando o comando span#fechar para colocar o botão de fechar-->
+        <span id="fechar">
+            <i class="far fa-times-circle" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+
+        </span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projetos.html">Projetos</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<!--  Colocando uma imagem para decoração usando o comando main>div#painel -->
+<main>
+    <div id="painel"></div>
+<!-- Editando páxina index.html -->
+
+    <section id="faixahome1">
+        <h2>Bem-Vindo ao Decor</h2>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum nemo fugit et vero impedit! Quidem voluptatibus repellat labore pariatur odit hic quasi atque, sed temporibus quaerat aliquid reprehenderit accusantium!
+            Esse vitae, eaque, magnam voluptate voluptas iste in eligendi, ullam deleniti temporibus accusamus. Libero, amet. Nam doloribus excepturi unde aspernatur earum mollitia sunt animi alias? Voluptates aperiam labore dolores. Iure.
+            Similique consequatur rerum nam voluptates adipisci expedita dolores excepturi temporibus dolorem id fuga omnis doloribus quam assumenda corrupti deleniti quia eaque, rem, amet possimus. Atque nihil maxime voluptas inventore quas?
+            Labore perspiciatis nemo cumque odio eligendi dolores! Eveniet facere voluptas ratione velit? Nulla corrupti, voluptates animi similique ad nam impedit sit ut neque est enim sequi expedita, reiciendis beatae id.
+            Quia, non debitis quod vel aliquid magni dicta optio, deserunt atque ducimus architecto possimus blanditiis porro voluptatem tempora molestias harum ad accusantium assumenda unde sapiente veniam odio. Ab, veritatis. Odit.
+        </div>
+    </section>
+    <section id="faixahome2">
+        <h2>Clientes Satisfeitos</h2>
+        <div id="clientes">
+        <div>
+            <img src="img/pessoa2.jpg" alt="Sandra">
+            <h3>Sandra</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur explicabo eos ullam quibusdam, repudiandae totam eius quis beatae adipisci veniam modi vero accusantium blanditiis! Ad sit animi doloremque consectetur sequi?</p>
+        </div>
+        <div>
+            <img src="img/pessoa4.jpg" alt="Fernanda">
+            <h3>Fernanda</h3>
+            <p>Consectetur, iure vel! Temporibus non voluptate eum id. Quas optio, similique modi tempore nihil magnam consequuntur id. Omnis, doloribus! Odit saepe, quis quos accusamus architecto cupiditate reprehenderit perferendis commodi magnam!</p>
+        </div>
+        <div>
+            <img src="img/pessoa1.png" alt="Pablo">
+            <h3>Pablo</h3>
+            <p>Dolores molestiae commodi iure non quidem optio necessitatibus eligendi explicabo, quod, quasi distinctio aliquid molestias tempore voluptatibus aliquam, officia nostrum expedita. Repudiandae dolorem laborum blanditiis magnam similique impedit aut ut!</p>
+        </div>
+        <div>
+            <img src="img/pessoa5.jpg" alt="Betina">
+            <h3>Betina</h3>
+            <p>Perferendis quos quibusdam omnis, aspernatur provident voluptas quam atque cumque commodi incidunt molestiae excepturi dolore itaque dolorum nulla esse facere, dolorem id praesentium. Necessitatibus voluptate nobis eaque fugit asperiores exercitationem.</p>
+        </div>
+
+        </div>
+
+        
+    </section>
+    <section id="faixahome3">
+        <h2>O que fazemos</h2>
+        <div>
+            <iframe  src="https://www.youtube.com/embed/yXRQy-90vms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+</main>
+
+<!--  Usaremos um atalho Footer>div#*2 para corpo de contato -->
+<Footer>
+    <div id="end">
+    Rua dos três Coquinhos, 22 - São Paulo - SP <br>
+    Tel: 11 5222-78777 - Contato@Maximusdecor.com.br
+</div>
+
+    <div id="redes">
+        <!-- Colocando links das redes sociais usando o atalho   nav>ul>li*3>a e na fonte dos icones coloca após o endereço
+        o link dos icones da fonte -->
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i>   </a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i>  </a></li>
+                <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i>    </a></li>
+            </ul>
+        </nav>
+
+    </div>
+</Footer>
+
+    
+    
+</body>
+</html>

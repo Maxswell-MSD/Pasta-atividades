@@ -19,7 +19,7 @@ body {
 /* Colocando cor no rodapé */
 header {
   flex: 1;
-  background-color: #546e7a;
+  background-color: #263238;
   color: white;
   font-family: "montserrat", sans-serif;
 }
@@ -36,6 +36,12 @@ header nav {
   text-align: center; /*Colocando fonte de link centralizado*/
   margin-top: 40px; /*Aqui vamos empurrar os links para baixo para separar do título*/
 }
+/* formatação do botão menu e fechar */
+header #menu,
+header nav #fechar {
+  display: none;
+}
+
 /* Tirando as bolinhas referente aos links */
 header nav ul {
   list-style: none; /*Tirando as bolas dos links*/
@@ -44,7 +50,7 @@ header nav ul {
 header nav ul li {
   background-color: #eee; /*Colocando cores na caixa dos links para saber o seu posicionamento*/
   display: inline-block; /*Colocando eles em linha um ao lado do outro*/
-  padding: 20px 70px; /*Colocando tamanho e largura dos links usado padding*/
+  padding: 20px 100px; /*Colocando tamanho e largura dos links usado padding*/
   transition: ease 0.5s;
 }
 /* Colocando efeito de cores ao passar o mouse sobre os links de navegação das páginas*/
@@ -83,7 +89,7 @@ footer {
   flex: 1; /*O flex vai ter uma ocupação nessa tela*/
   display: flex;
   flex-direction: row; /* Para os elementos ficarem um ao lado do outro*/
-  background-color: #546e7a;
+  background-color: #263238;
   font-family: "montserrat";
   font-size: 10pt;
   padding: 50px;
@@ -120,17 +126,189 @@ footer #redes ul li a {
   color: white;
   margin: 10px;
 }
+/* //////////// Iniciando formatação da ´página index.html */
+main #faixahome1{
+  /* background-color: #eee; */
+  padding: 50px 100px;
+  /* Colocando efeito de transparência */
+  background-color: rgba(240,240,240, 0.90);
+
+ 
+}
+main #faixahome1 h2{
+  font-family: "montserrat", sans-serif;
+  margin: 20px;
+ 
+}
+main #faixahome1 div{
+  font-family: "montserrat", sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 30px;
+  text-align: justify;
+ 
+}
+
+
+
+
+main #faixahome2{
+  background-color: #fff;
+  padding: 10px;
+  margin: 400px 0px;
+}
+main #faixahome2 h2{
+  font-family: "montserrat", sans-serif;
+  margin: 40px;
+  text-align: center;
+  font-size: 30pt;
+}
+
+main #faixahome2 #clientes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #faixahome2 #clientes div{
+  flex: 1;
+  margin: 10px;
+
+}
+/* Editando área de vídeo */
+main #faixahome3{
+  background-color: #eee;
+  padding-top: 100px;
+}
+main #faixahome3 h2{
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-size: 30pt;
+}
+/* Aumentando tamanho do vídeo */
+main #faixahome3 iframe{
+  width: 100%;
+  height: 700px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  Colocando break points responsividade ponto de quebra */
 /* Tela de Smartfones */
 @media (min-width: 0px) and (max-width: 576px) {
-  main div {
-    width: 100%;
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
+  main #painel {
+    height: 100px;
+    background-position: 0px -20px;
+  }
+
+
+  header nav {
+    background-color: rgb(56, 4, 4);
+    height: 100vh; /*fica com 100% da altura da tela do dispositivo que abre*/
+    position: fixed;
+    /* Fazer a barra iniciar no topo do navegador e de fora a esquerda 
+    do navegador */
+    top: 0;
+    left: -250px;
+    width: 200px;
+    padding-top: 100px;
+    text-align: left;
+    transition: ease 0.5s;
+  }
+  header nav ul li {
     display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(56, 4, 4);
+  }
+  header nav ul li a {
+    color: #eee;
+  }
+  /* Fazendo botão de menu e fechar aparecer */
+  header #menu,
+  header nav #fechar {
+    display: block;
+  }
+  header #menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  header nav #fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
   }
 }
 /* Telas de tablets */
 @media (min-width: 576px) and (max-width: 767.78px) {
+
+header h1 {
+  padding: 0;
+  text-align: center;
+}
+}
+main #painel {
+  height: 250px;
+  background-position: 0px -100px;
+}
+header nav {
+  background-color: rgb(56, 4, 4);
+  height: 100vh; /*fica com 100% da altura da tela do dispositivo que abre*/
+  position: fixed;
+  /* Fazer a barra iniciar no topo do navegador e de fora a esquerda 
+  do navegador */
+  top: 0;
+  left: -400px;
+  width: 100px;
+  padding-top: 100px;
+  text-align: left;
+  transition: ease 0.5s;
+  
+}
+header nav ul li {
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(56, 4, 4);
+}
+header nav ul li a {
+  color: #eee;
+}
+
+/* Fazendo botão de menu e fechar aparecer */
+header #menu,
+header nav #fechar {
+  display: block;
+}
+
+header #menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+header nav #fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /* Tela de desktop */
