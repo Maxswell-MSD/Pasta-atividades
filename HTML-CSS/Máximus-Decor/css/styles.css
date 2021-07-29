@@ -127,68 +127,198 @@ footer #redes ul li a {
   margin: 10px;
 }
 /* //////////// Iniciando formatação da ´página index.html */
-main #faixahome1{
+main #faixahome1 {
   /* background-color: #eee; */
   padding: 50px 100px;
   /* Colocando efeito de transparência */
-  background-color: rgba(240,240,240, 0.90);
-
- 
+  background-color: rgba(240, 240, 240, 0.9);
 }
-main #faixahome1 h2{
+main #faixahome1 h2 {
   font-family: "montserrat", sans-serif;
   margin: 20px;
- 
 }
-main #faixahome1 div{
+main #faixahome1 div {
   font-family: "montserrat", sans-serif;
   padding-left: 100px;
   padding-right: 100px;
   line-height: 30px;
   text-align: justify;
- 
 }
 
-
-
-
-main #faixahome2{
+main #faixahome2 {
   background-color: #fff;
   padding: 10px;
   margin: 400px 0px;
 }
-main #faixahome2 h2{
+main #faixahome2 h2 {
   font-family: "montserrat", sans-serif;
   margin: 40px;
   text-align: center;
   font-size: 30pt;
 }
 
-main #faixahome2 #clientes{
+main #faixahome2 #clientes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-main #faixahome2 #clientes div{
+main #faixahome2 #clientes div {
   flex: 1;
   margin: 10px;
-
 }
 /* Editando área de vídeo */
-main #faixahome3{
+main #faixahome3 {
   background-color: #eee;
   padding-top: 100px;
 }
-main #faixahome3 h2{
+main #faixahome3 h2 {
   text-align: center;
   font-family: "montserrat", sans-serif;
   font-size: 30pt;
 }
 /* Aumentando tamanho do vídeo */
-main #faixahome3 iframe{
+main #faixahome3 iframe {
   width: 100%;
   height: 700px;
+}
+main #sala h3,
+main #Cozinha h3,
+main #Quarto h3,
+main #Banheiro h3,
+main #Jantar h3 {
+  font-family: "montserrat", sans-serif;
+  font-size: 46pt;
+  font-weight: lighter;
+  text-align: center;
+  padding: 50px 0px;
+  color: rgba(0, 0, 0, 0.4);
+}
+main #sala h2,
+main #Cozinha h2,
+main #Quarto h2,
+main #Banheiro h2,
+main #Jantar h2 {
+  font-family: "montserrat", sans-serif;
+  font-size: 46pt;
+  text-align: center;
+  padding-top: 60px;
+  color: rgba(0, 0, 0, 0.9);
+}
 
+main #sala div {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #sala div img {
+  flex: 1;
+  width: 32%;
+  height: auto;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+main #sala div img:hover {
+  opacity: 1;
+}
+main #Cozinha #conteudo {
+  display: flex;
+  flex-direction: row;
+}
+
+main #Cozinha #destaque {
+  flex: 0.1;
+}
+main #Cozinha #destaque img {
+  width: 100%;
+  height: auto;
+}
+main #Cozinha #miniatura {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #Cozinha #miniatura img {
+  flex: 1;
+  width: 32%;
+  height: auto;
+  margin: 5px;
+}
+main #Quarto div {
+  display: flex;
+  background-color: rgb(19, 16, 15);
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+main #Quarto div img {
+  flex: 1;
+  width: 40%;
+  height: auto;
+  /*Realizar agora efeito nas imagens*/
+  transform: skewX(15deg);
+  margin: 5px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+main #Quarto div img:hover {
+  transform: scale(1.2);
+  transform: skewX(odeg);
+  /* fazer a imagem ficar sobre as outras */
+  z-index: 1000;
+}
+main #Banheiro #area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 1px dotted silver;
+}
+main #Banheiro #area div {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #666;
+  text-align: center;
+  padding: 40px 0px 100px 0px;
+  margin: 5px;
+}
+main #Banheiro #area div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+main #Jantar div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #Jantar div img {
+  flex: 1;
+  width: 15%;
+}
+main form {
+  width: 40%;
+  padding: 20px;
+  margin: 30px auto;
+}
+main form input,
+main form textarea {
+  width: 90%;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+main form textarea {
+  height: 200px;
+}
+main form input[type=submit]{
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -198,73 +328,63 @@ main #faixahome3 iframe{
 
 
 
+  /*  Colocando break points responsividade ponto de quebra */
+  /* Tela de Smartfones */
+  @media (min-width: 0px) and (max-width: 576px) {
+    header h1 {
+      padding: 0;
+      text-align: center;
+    }
+    main #painel {
+      height: 100px;
+      background-position: 0px -20px;
+    }
 
-
-
-
-
-
-
-
-/*  Colocando break points responsividade ponto de quebra */
-/* Tela de Smartfones */
-@media (min-width: 0px) and (max-width: 576px) {
-  header h1 {
-    padding: 0;
-    text-align: center;
-  }
-  main #painel {
-    height: 100px;
-    background-position: 0px -20px;
-  }
-
-
-  header nav {
-    background-color: rgb(56, 4, 4);
-    height: 100vh; /*fica com 100% da altura da tela do dispositivo que abre*/
-    position: fixed;
-    /* Fazer a barra iniciar no topo do navegador e de fora a esquerda 
+    header nav {
+      background-color: rgb(56, 4, 4);
+      height: 100vh; /*fica com 100% da altura da tela do dispositivo que abre*/
+      position: fixed;
+      /* Fazer a barra iniciar no topo do navegador e de fora a esquerda 
     do navegador */
-    top: 0;
-    left: -250px;
-    width: 200px;
-    padding-top: 100px;
-    text-align: left;
-    transition: ease 0.5s;
-  }
-  header nav ul li {
-    display: block;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: rgb(56, 4, 4);
-  }
-  header nav ul li a {
-    color: #eee;
-  }
-  /* Fazendo botão de menu e fechar aparecer */
-  header #menu,
-  header nav #fechar {
-    display: block;
-  }
-  header #menu {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
-  header nav #fechar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+      top: 0;
+      left: -250px;
+      width: 200px;
+      padding-top: 100px;
+      text-align: left;
+      transition: ease 0.5s;
+    }
+    header nav ul li {
+      display: block;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: rgb(56, 4, 4);
+    }
+    header nav ul li a {
+      color: #eee;
+    }
+    /* Fazendo botão de menu e fechar aparecer */
+    header #menu,
+    header nav #fechar {
+      display: block;
+    }
+    header #menu {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+    header nav #fechar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
   }
 }
 /* Telas de tablets */
 @media (min-width: 576px) and (max-width: 767.78px) {
-
-header h1 {
-  padding: 0;
-  text-align: center;
-}
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
 }
 main #painel {
   height: 250px;
@@ -282,7 +402,6 @@ header nav {
   padding-top: 100px;
   text-align: left;
   transition: ease 0.5s;
-  
 }
 header nav ul li {
   display: block;
