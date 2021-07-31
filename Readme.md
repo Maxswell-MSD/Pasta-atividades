@@ -34,4 +34,3 @@
    ![Snake animation](https://github.com/Maxswell-MSD/Maxswell-MSD/blob/output/github-contribution-grid-snake.svg)
  
 </div>
-<!-- Finalizando -->
