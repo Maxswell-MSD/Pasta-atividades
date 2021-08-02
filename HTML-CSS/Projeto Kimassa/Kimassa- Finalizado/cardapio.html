@@ -1,0 +1,384 @@
+<!-- ========================================================================================================== -->
+<!-- ################ INICIANDO A ESTRUTURA BASE DO PROJETO ################### -->
+ 
+
+
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ki massa</title>
+<!-- ========================================================================================================== -->
+<!-- ################ INICIANDO AREA DE CRIAÇÃO DE LINKS COM CSS, FONTES DO GOOGLE E ICONIS ################### -->
+    
+    <!-- Link de css para o arquivo styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+ 
+    <!-- Basta pesquisar google fontes  -->
+    <!-- Link de css para a formatação de fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Staatliches&family=Style+Script&display=swap" rel="stylesheet">
+
+    
+
+<!-- Link de icones usando fonte https://fontawesome.com  Mas observe sempre a indicação
+de onde deve colocar o link. ele muda conforme o roteiro ou fontes de outros sites-->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+
+<!-- ////////////////////// FINALIZANDO A AREA DE LINKS CSS, FONTES DO GOOGLE E ICONIS ////////////////////// -->
+<!-- ========================================================================================================= -->
+
+
+</head>
+                
+<!-- ===================================FIM DO HEAD====================================================================== 
+
+
+    ========================================================================================================== 
+            ################ INICIANDO AREA DO CORPO DO SITE O BODY############################### ################### -->
+
+
+<body>
+    <!-- APÓS FAZER A COLAGEM DE FONTES DE LINK QUE ESTÁ NA LINHA 25 LAYOUT.HTML PODEMOS PEGAR O LINK DO ICONIS
+    DENTRO DO SITE FONTE E COLAR AQUI NO BODY E ACRESCENTAMOS O TAMANHO COM STYLE="font-size: 50PX;" OU FORMATAMOS PELO CSS -->
+    <!-- <i class="fab fa-facebook-square"></i>
+    <i class="fas fa-phone-square-alt"></i>
+    <i class="fas fa-at"></i>               FEITO O TESTE PARA VER SE O LINK PODE APAGA ESSES LINKS-->
+    <!-- <i class="fab fa-whatsapp-square"></i> --> 
+
+
+    <!-- ========================================================================================================== 
+ ################ INICIANDO AREA DOS ELEMENTOS DO heade    ############################### ###################
+
+O elemento HTML <heade> representa um grupo de suporte introdutório ou navegacional.Pode 
+conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
+
+ USANDO O ATALHO heade(> INDICA COLOCANDO DENTRO DO header uma função) header>h1(+indicando que abaixo do h1 tera um nav)
+header>h1+nav>(ul indicando uma lista não ordenada)header>h1+nav>ul>(li indicando lista)header>h1+nav>ul>li>(a dentro de li recebendo
+a tag a.  comando ficará header>h1+nav>ul>li>a ou header:h1+nav>ul>li*3>a -->
+
+<header>
+    <h1>Ki massa </h1>
+    <!--EDIÇÃO DA AULA 9º CSS --> 
+    <!--  Colocando aqui o botão do menu  -->
+   <!--<span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ), ou para compartilhar valores de atributos como lang  -->
+    <span id="menu">
+
+<!-- Colocando javaScript para o botão abrir ao clicar nele  colocando após as aspas (">)antes do fechamento do(</i> os seguintes codigos abaixo) -->
+      <!--Colamos aqui o botão do menu-->
+      <i class="fas fa-ellipsis-v" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>         
+
+    </span>
+
+    <nav>
+         <!--EDIÇÃO DA AULA 9º CSS --> 
+        <!--  Colocando aqui o botão de fechar menu  -->
+        <span id="fechar">
+      <!-- Colocando javaScript para o botão de fechar  ao clicar nele  colocando após as aspas (">)antes do fechamento do(</i> os seguintes codigos abaixo) -->
+     
+            <i class="fas fa-times" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+        </span>
+        
+            <ul>
+                <li><a href="index.html">home</a></li>
+            <li><a href="servicos.html">serviços</a></li>
+            <li><a href="cardapio.html">cardápio</a></li>
+            <li><a href="contato.html">contato</a></li>
+            
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- Fim da área do header -->
+
+    <!-- Início da área do main -->
+
+    
+        <main>
+            <div id="painel"></div>
+<!-- Aqui fazemos as divisões div para criar imagens, textos-->
+
+    <h6>Pizzas</h6>
+    <!--Inicio da área das pizzas e suas informações de cardápio linha 39 cardapio.html-->
+    <div id="area">     <!--Iniciando a primeira divisão onde guardaremos os elementos-->
+        
+        <!-- Inicio do conteúdo das pizzas, coloque div#conteudo seguido de enter para criar a tag -->
+        <div id="conteudo">
+
+            <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+            <div id="img">
+                <img src="img/portuguesa2.png" alt="Portuguesa">
+
+
+            </div>
+
+            <!-- Fim da imagem -->
+
+            <!-- Inicio do texto da imagem div#texto -->
+            <div id="texto">
+                <!-- colocando nome das pizzas -->
+                <h5>Portuguesa</h5> 
+                <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                <p> Ovos, cebola, azeitona, ervilha, queijo e presunto <span>R$37,99</span></p>
+
+
+
+            </div>
+            <!-- Fim do texto da imagem -->
+        </div>
+
+
+        
+        <!-- Inicio do conteúdo das pizzas, coloque div#conteudo seguido de enter para criar a tag -->
+        <div id="conteudo">
+
+            <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+            <div id="img">
+                <img src="img/calabresa2.png" alt="Calabresa">
+
+
+            </div>
+
+            <!-- Fim da imagem -->
+
+            <!-- Inicio do texto da imagem div#texto -->
+            <div id="texto">
+                <!-- colocando nome da pizza -->
+                <h5>Calabresa</h5> 
+                <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                <p>Calabresa, Queijo mussarela, azeitonas, Orégano <span>R$35,99</span></p>
+
+
+
+            </div>
+            <!-- Fim do texto da imagem -->
+        </div>
+          <!-- Inicio do conteúdo das pizzas, coloque div#conteudo seguido de enter para criar a tag -->
+          <div id="conteudo">
+
+            <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+            <div id="img">
+                <img src="img/marguerita2.png" alt="Marguerita">
+
+
+            </div>
+
+            <!-- Fim da imagem -->
+
+            <!-- Inicio do texto da imagem div#texto -->
+            <div id="texto">
+
+    
+                <!-- colocando nome das pizzas-->
+                <h5>Marguerita</h5> 
+                <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                <p> molho, muçarela, tomate e manjericão <span>R$40,99</span></p>
+
+
+
+            </div>
+            <!-- Fim do texto da imagem -->
+        </div>
+
+
+                <!-- Inicio do conteúdo das pizzas, coloque div#conteudo seguido de enter para criar a tag -->
+                <div id="conteudo">
+
+                    <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+                    <div id="img">
+                        <img src="img/frango-catupiry2.png" alt="Frango-catupiry">
+        
+        
+                    </div>
+        
+                    <!-- Fim da imagem -->
+        
+                    <!-- Inicio do texto da imagem div#texto -->
+                    <div id="texto">
+                        <!-- colocando nome da pizza -->
+                        <h5> Frango com catupiry </h5> 
+                        <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                        <p> frango,catupiry,azeitonas e salsa  <span>R$43,99</span></p>
+        
+        
+        
+                    </div>
+                    <!-- Fim do texto da imagem -->
+                </div>
+        
+
+        
+
+
+
+    </div>
+    <!--Fim da área das pizzas da linha 39 cardapio.html--> 
+
+
+    
+    <h6>Salgados</h6>
+    <!--Inicio da área dos salgados e suas informações de cardápio linha 39 cardapio.html-->
+    <div id="area">     <!--Iniciando a primeira divisão onde guardaremos os elementos-->
+        
+        <!-- Inicio do conteúdo dos salgados, coloque div#conteudo seguido de enter para criar a tag -->
+        <div id="conteudo">
+
+            <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+            <div id="img">
+                <img src="img/coxinha4.jpg" alt="Coxinha">
+
+
+            </div>
+
+            <!-- Fim da imagem -->
+
+            <!-- Inicio do texto da imagem div#texto -->
+            <div id="texto">
+                <!-- colocando nome dos salgados -->
+                <h5>Coxinha</h5> 
+                <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                <p> Kit 100  <span>R$32,00</span></p>
+
+
+
+            </div>
+            <!-- Fim do texto da imagem -->
+        </div>
+
+
+        
+        <!-- Inicio do conteúdo dos cafés, coloque div#conteudo seguido de enter para criar a tag -->
+        <div id="conteudo">
+
+            <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+            <div id="img">
+                <img src="img/bolaqueijo5.jpg" alt="Stakes">
+
+
+            </div>
+
+            <!-- Fim da imagem -->
+
+            <!-- Inicio do texto da imagem div#texto -->
+            <div id="texto">
+                <!-- colocando nome do café -->
+                <h5>Bolinha de queijo</h5> 
+                <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                <p> Kit 100 <span>R$36,00</span></p>
+
+
+
+            </div>
+            <!-- Fim do texto da imagem -->
+        </div>
+
+
+        
+        <!-- Inicio dos Salgados, coloque div#conteudo seguido de enter para criar a tag -->
+        <div id="conteudo">
+
+            <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+            <div id="img">
+                <img src="img/pastelmini.jpg" alt="Pastel">
+
+
+            </div>
+
+            <!-- Fim da imagem -->
+
+            <!-- Inicio do texto da imagem div#texto -->
+            <div id="texto">
+                <!-- colocando nome do café -->
+                <h5>Mini Pastel</h5> 
+                <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                <p> Kit 100 <span>R$22,50</span></p>
+
+
+
+            </div>
+            <!-- Fim do texto da imagem -->
+        </div>
+
+
+                <!-- Inicio do conteúdo dos cafés, coloque div#conteudo seguido de enter para criar a tag -->
+                <div id="conteudo">
+
+                    <!-- Inicio da imagem div#img a imagen se encontra dentro do conteúdo -->
+                    <div id="img">
+                        <img src="img/kibe2.jpg" alt="Kibe">
+        
+        
+                    </div>
+        
+                    <!-- Fim da imagem -->
+        
+                    <!-- Inicio do texto da imagem div#texto -->
+                    <div id="texto">
+                        <!-- colocando nome do café -->
+                        <h5>Kibe</h5> 
+                        <!-- Colocando span para manter um sentido sem quebrar a linha no valor R$ -->
+                        <p> Kit 100 <span>R$48,00</span></p>
+        
+        
+        
+                    </div>
+                    <!-- Fim do texto da imagem -->
+                </div>
+        
+
+        
+
+
+
+    </div>
+    <!--Segundo fim da área dos cafés da linha  cardapio.html--> 
+
+    <main>
+        
+
+    </main>
+
+    <!-- Fim da área do main -->
+
+    <!-- Início da área do footer informações da página -->
+
+    <footer>
+        <div id="end">
+       
+            Autor: Maxswell Sousa Diniz - São Paulo - SP <br>
+            E-mail: maxswellsousadiniz@yahoo.com <br>
+            Tel: 11 946742182 - contato@Kimassa.com
+        
+        <div id="redes">
+    <!-- O Elemento HTML de Navegação ( <nav> ) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. ... 
+        Um documento pode ter vários elementos <nav> , por exemplo, um para navegação no site e outro para navegação dentro da página -->
+        <!--INICIANDO OS LINKS DAS REDES SOCIAIS USANDO OS CÓDIGO DE ATALHO PARA CRIAÇÃO DOS LINKS nav>ul>li#3>a  -->
+           <!-- após colocar o endereço da rede social devemos colocar entre os <> o link dos iconis das redes -->
+        <nav>
+                <ul>
+                    <li><a href="http://www.facebook.com."><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="http://www.instagram.com."><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    </div>
+    
+    
+    
+        <!--################################# FINAL DO FOOTER DE EDIÇÃO DO RODAPÉ    ############################### ################### -->
+    </footer>
+    
+    
+    </body>
+    
+    <!-- ////////////////////// FINALIZANDO A AREA DO CORPO DO SITE DO BODY ////////////////////////////////////// -->
+    
+    
+    </html>
