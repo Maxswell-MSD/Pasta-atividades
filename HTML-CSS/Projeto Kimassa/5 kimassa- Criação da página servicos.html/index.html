@@ -1,0 +1,234 @@
+<!-- ========================================================================================================== -->
+<!-- ################ INICIANDO A ESTRUTURA BASE DO PROJETO DO SITE LAYOUT.HTML ################### -->
+ 
+
+
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria nosso sabor</title>
+<!-- ========================================================================================================== -->
+<!-- ################ INICIANDO AREA DE CRIAÇÃO DE LINKS COM CSS, FONTES DO GOOGLE E ICONIS DO SITE LAYOUT.HTML ################### -->
+    
+    <!-- Link de css para o arquivo styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+ 
+    <!-- Basta pesquisar google fontes  -->
+    <!-- Link de css para a formatação de fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Staatliches&family=Style+Script&display=swap" rel="stylesheet">
+
+    
+
+<!-- Link de icones usando fonte https://fontawesome.com  Mas observe sempre a indicação
+de onde deve colocar o link. ele muda conforme o roteiro ou fontes de outros sites-->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+<!--  EDIÇÃO DA AULA 9º CSS  -->
+<!-- Criando CSS Embed para criar imagem de fundo da página para aplicar efeito de transparência-->
+<!-- O contúdo do style que tive não será compartilhado com outro elemento -->
+<style>
+    main{
+        
+        background-image: url(img/fundo3.jpg);
+        /* fixar a imagem ao fundo da tela para n~]ao mover conforme a barra de navegação */
+        background-attachment: fixed;
+        background-repeat: no-repeat; 
+        background-size: 100%;
+    }
+
+
+</style>
+
+
+<!-- ////////////////////// FINALIZANDO A AREA DE LINKS CSS, FONTES DO GOOGLE E ICONIS ////////////////////// -->
+<!-- ========================================================================================================= -->
+
+
+</head>
+                
+<!-- ===================================FIM DO HEAD====================================================================== 
+
+
+    ========================================================================================================== 
+            ################ INICIANDO AREA DO CORPO DO SITE O BODY DO SITE LAYOUT.HTML############################### ################### -->
+
+
+<body>
+    <!-- APÓS FAZER A COLAGEM DE FONTES DE LINK QUE ESTÁ NA LINHA 25 LAYOUT.HTML PODEMOS PEGAR O LINK DO ICONIS
+    DENTRO DO SITE FONTE E COLAR AQUI NO BODY E ACRESCENTAMOS O TAMANHO COM STYLE="font-size: 50PX;" OU FORMATAMOS PELO CSS -->
+    <!-- <i class="fab fa-facebook-square"></i>
+    <i class="fas fa-phone-square-alt"></i>
+    <i class="fas fa-at"></i>               FEITO O TESTE PARA VER SE O LINK PODE APAGA ESSES LINKS-->
+    <!-- <i class="fab fa-whatsapp-square"></i> --> 
+
+
+    <!-- ========================================================================================================== 
+ ################ INICIANDO AREA DOS ELEMENTOS DO heade DO SITE LAYOUT.HTML   ############################### ###################
+
+O elemento HTML <heade> representa um grupo de suporte introdutório ou navegacional.Pode 
+conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
+
+ USANDO O ATALHO heade(> INDICA COLOCANDO DENTRO DO header uma função) header>h1(+indicando que abaixo do h1 tera um nav)
+header>h1+nav>(ul indicando uma lista não ordenada)header>h1+nav>ul>(li indicando lista)header>h1+nav>ul>li>(a dentro de li recebendo
+a tag a.  comando ficará header>h1+nav>ul>li>a ou header:h1+nav>ul>li*3>a -->
+
+<header>
+    <h1>Pizzaria Nosso Sabor. </h1>
+    <!--EDIÇÃO DA AULA 9º CSS --> 
+    <!--  Colocando aqui o botão do menu  -->
+   <!--<span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ), ou para compartilhar valores de atributos como lang  -->
+    <span id="menu">
+
+<!-- Colocando javaScript para o botão abrir ao clicar nele  colocando após as aspas (">)antes do fechamento do(</i> os seguintes codigos abaixo) -->
+      <!--Colamos aqui o botão do menu-->
+      <i class="fas fa-ellipsis-v" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>         
+
+    </span>
+
+    <nav>
+         <!--EDIÇÃO DA AULA 9º CSS --> 
+        <!--  Colocando aqui o botão de fechar menu  -->
+        <span id="fechar">
+      <!-- Colocando javaScript para o botão de fechar  ao clicar nele  colocando após as aspas (">)antes do fechamento do(</i> os seguintes codigos abaixo) -->
+     
+            <i class="fas fa-times" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+        </span>
+        
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="cardapio.html">cardápio</a></li>
+            <li><a href="contato.html">contato</a></li>
+            <li><a href="servicos.html">serviços</a></li>
+        </ul>
+    </nav>
+
+    <!--################ FINAL DOS ELEMENTOS DO heade DO SITE LAYOUT.HTML    ################################################# -->
+</header>
+<!-- ////////////////////// COLOCANDO NO PAINEL UMA IMAGEM NO CABEÇALHO NA AREA DE DECORAÇÃO ////////////////////////////////////// 
+ ################ INICIANDO MAIN PARA DECORAÇÃO    ############################### ###################
+
+    Resumo. O elemento <main> define o conteúdo principal dentro do <body> em seu documento ou aplicação.
+ Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. ... Autores não devem incluir mais de um elemento main no mesmo documento 
+
+ COLOCANDO O CÓDIGO main>div#painel (painel é um exemplo de qualquer nome que se pode dar de identificação)
+ 
+ O elemento de divisão HTML <div> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar ...
+O atributo global (#)dir define um identificador exclusivo (ID) que deve ser único por todo o documento. Seu objetivo é identificar o elemento ao navegar por âncoras (usando um identificador de fragmento), quando utilizar scripts ou estilizando (com CSS). -->
+
+<main>
+    <!-- EDIÇÃO DA AULA 8º layout.html formatado e finalizado-->
+    <div id="painel"></div>   
+
+
+
+    <!-- EDIÇÃO DA AULA 9º CSS DA PÁGINA INDEX.HTML -->
+<!-- USANDO O ATALHO section#*3>h2+div CRIANDO 3 SEÇÃO ID E UM TEXTO H2 DENTRO DE UMA DIV -->
+<!--  O elemento HTML <section> representa uma seção genérica contida em um documento HTML, geralmente com um título, quando não existir um elemento -->
+
+    <section id="boasvindas1">
+    <h2>Bem-Vindo a Pizzaria Nosso Sabor </h2>
+    <!-- Colocaremos um texto de apresentação dentro da div editado da fonte index.html -->
+    <div>
+        Quase todo mundo já ouviu falar sobre a história da pizza, não é mesmo? “Surgiu na Itália…” Não! A pizza não é de origem italiana, como a maioria pensa.
+Há seis mil anos antes de Cristo, os egípcios desenvolveram a receita de uma massa, resultado de farinha e água, que serviu de base para a “nossa” massa de pizza. A receita egípcia percorreu diversas civilizações ao longo da história. Os gregos, por exemplo, resolveram colocar a farinha de trigo juntamente com o arroz e assar tal mistura em tijolos quentes. Já os fenícios tiveram a ideia de adicionar cebolas e carnes por cima dessa massa.
+Entretanto, não podemos falar em pizza sem ressaltar a contribuição dos italianos.
+Os turcos muçulmanos adotaram o costume dos fenícios durante a Idade Média e, devido às cruzadas, a receita da “pizza dos fenícios” chegou à Itália por meio do porto de Nápoles. No começo, as pizzas eram destinadas aos italianos pobres, para acabar com a fome do povo, sendo adicionadas à massa apenas algumas ervas e azeite. Além disso, a pizza era comida como uma espécie de sanduíche.
+A história da pizza redonda se inicia na cidade de Nápoles. Nessa época, já eram adicionados tomate, toucinho, peixes fritos e queijo. A fama da pizza se espalhou pelo mundo inteiro, o que resultou no surgimento da primeira pizzaria da história: Port’Alba, a qual foi ponto de encontro de vários artistas famosos da época, fato que retirou definitivamente o estereótipo de “alimento dos pobres” da iguaria.
+No Brasil, a pizza chegou por meio dos imigrantes italianos na década de 50.
+</div>
+
+
+<!-- EDIÇÃO DA AULA 9º CSS DA PÁGINA INDEX.HTML -->
+</section>
+<section id="nossaspizzas2">
+    <h2>Pizzas em Destaques</h2>
+    <div id="Pizzas">
+        <!-- Criando div com imagens, nome das pizzas e pequeno texto da receita de cada pizza criação dentro do index.html -->
+<!--  código de atalho criado para gerar div*5>img+h3+p>lorem edição index.html -->
+<div>
+    <img src="img/pizzamarguerita.jpg" alt="PizzaMarguerita">
+    <h3>Pizza Marguerita ou Margherita</h3>
+    <p>Criada para homenagear a rainha Margherita, esta se tornou uma das pizzas mais tradicionais da Itália. É também um dos sabores mais pedidos pelos brasileiros. Leva apenas molho de tomate, queijo mussarela, manjericão e rodelas de tomate. É uma ótima opção para quem não come carne. </p>
+</div>
+<div>
+    <img src="img/pfrangocatupiry.jpg" alt="PizzaFrangocatupiry">
+    <h3>Pizza de frango com catupiry</h3>
+    <p>Poucas pessoas sabem, mas, 100% brasileira, a pizza de frango com catupiry surgiu na década de 1970. Segundo a história, um representante da marca de requeijão Catupiry propôs a uma famosa pizzaria em São Paulo que utilizasse o requeijão em uma de suas pizzas. O dono da pizzaria gostou da ideia e criou então a pizza que leva frango desfiado e catupiry. Em pouco tempo, o sabor caiu no gosto dos brasileiros. Atualmente, é considerado um dos sabores de pizza tradicionais do país.</p>
+</div>
+<div>
+    <img src="img/pcalabresa.jpg" alt="Pizzacalabresa">
+    <h3>Pizza calabresa</h3>
+    <p>Simples e deliciosa, a pizza calabresa conquistou fãs em todo o mundo. Está presente em mais de 30% dos pedidos e é, com toda a certeza, a número um dos brasileiros. É composta por linguiça calabresa, molho de tomate fresco, cebola, azeitona, queijo mussarela e orégano salpicado.</p>
+</div>
+<div>
+    <img src="img/pportuguesa.jpg" alt="PizzaPortuguesa">
+    <h3>Pizza portuguesa</h3>
+    <p>Trazida para o Brasil pelos portugueses, a tradicional pizza portuguesa é um dos sabores mais pedidos nas pizzarias. Seu recheio leva ovos, cebola, azeitona, ervilha, queijo e presunto. Algumas versões levam também milho, palmito, tomate e pimentão</p>
+</div>
+<div>
+    <img src="img/pnapolitana.jpg" alt="PizzaNapolitana">
+    <h3>Pizza Napolitana</h3>
+    <p>Tradicional da cidade de Nápoles, a pizza Napolitana foi consagrada um Patrimônio Imaterial da Humanidade pela Unesco em 2017. Sua receita original leva tomate, azeite de oliva, orégano e alho.</p>
+</div>
+    </div>
+
+
+ <!-- EDIÇÃO DA AULA 9º CSS DA PÁGINA INDEX.HTML -->   
+</section>
+<section id="videopizza3">
+    <h2>Venha conhecer nossos serviços!</h2>
+    <div>
+        <iframe src="https://www.youtube.com/embed/Fbrg90LGSs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!--################ FIM DO MAIN PARA EDIÇÃO DO DO SITE LAYOUT.HTML e INDEX.HTML   ############################### ###################-->
+</main>
+<!--################################# INICIANDO FOOTER DE EDIÇÃO DO RODAPÉ DA PÁGINA LAYOUT.HTML    ############################### ###################
+O elemento HTML de Rodapé (<footer>) representa um rodapé para o seu sectioning content (conteúdo de seção) mais próximo ou sectioning root elemento (ou seja, seu parente mais próximo <article> , <aside> , <nav> , <section> , <blockquote> , <body> , <details> , <fieldset> , <figure> , <td> (en-US)).
+NESSE CÓDIGO FOI USADO ESSE SEGUINTE ATALHO DA CRIAÇÃO DO CORPO DE RODAPÉ footer>div#*2 -->
+<footer>
+    <div id="end">
+    Rua Três Coquinhos 234 - São Paulo - SP <br>
+    Tel: 11 7654-5880 - contato@pizzarianossosabor.com
+    
+    <div id="redes">
+<!-- O Elemento HTML de Navegação ( <nav> ) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. ... 
+    Um documento pode ter vários elementos <nav> , por exemplo, um para navegação no site e outro para navegação dentro da página -->
+    <!--INICIANDO OS LINKS DAS REDES SOCIAIS USANDO OS CÓDIGO DE ATALHO PARA CRIAÇÃO DOS LINKS nav>ul>li#3>a  -->
+       <!-- após colocar o endereço da rede social devemos colocar entre os <> o link dos iconis das redes -->
+    <nav>
+            <ul>
+                <li><a href="http://www.facebook.com."><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="http://www.instagram.com."><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+
+
+    <!--################################# FINAL DO FOOTER DE EDIÇÃO DO RODAPÉ DO SITE LAYOUT.HTML   ############################### ################### -->
+</footer>
+
+
+</body>
+
+<!-- ////////////////////// FINALIZANDO A AREA DO CORPO DO SITE DO BODY DO SITE LAYOUT.HTML ////////////////////////////////////// -->
+
+
+</html>

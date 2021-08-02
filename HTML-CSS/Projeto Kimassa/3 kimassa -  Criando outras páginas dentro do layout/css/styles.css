@@ -1,0 +1,319 @@
+/* COLOCANDO CÓDIGO DA FONTE DO GOOGLE PARA INTEGRAR COM HTML CUJO A FONTE SE ENCONTRA NOS CAMPOS DOS LINKS DA LINHA
+ 17 ATPE 19 DO LAYOUT.HTML USAREMOS ABAIXO ESSAS FONTES PARA FORMATAR O SITE */
+/* 
+font-family: 'MonteCarlo', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Style Script', cursive;
+
+*/
+/* ################################ INICIANDO A FORMATAÇÃO DA BASE LAYOUT.HTML################## */
+
+* {
+  /* USANDO MARGIN E PADDING 0 O CABEÇALHO E TODOS OS ELEMENTOS NA TELA FICARÁ COLADA AO LADO ESQUERDO NA TELA */
+  /* A propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top , margin-right (en-US), margin-bottom , e margin-left (en-US). */
+  margin: 0;
+  /*A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left ).  */
+  padding: 0;
+  /* O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. Com content-box , ao definir width: 100px , o interior (conteúdo) do elemento terá 100px, mas por termos padding-left: 50px , o tamanho total do elemento será 150px. */
+  /* Sempre vai tratar as margens das bordas para dentro usando esse código */
+  box-sizing: border-box;
+}
+
+/*  fORMATANDO O CORPO DO BODY LINHA DA LINHA 46 ATÉ 125 LAYAUT.HTML */
+
+body {
+  /* ########################## ORGANIZAÇÃO DE DADOS USANDO FLEX LAYOUT.HTML################## */
+
+  /*Além disso, CSS display:flex  .Flexbox permite que se alinhem os itens horizontalmente e verticalmente, ordenando-os em diferentes posições no layout independente de como aparecem no documento HTML, e também permite que disponha os itens na horizontal (linhas) e na vertical (colunas).  */
+  /* Assim aplicandi o display:flex os icones e endereço do site vai ficar centralizado e alinhados ao centro */
+  display: flex;
+  /*A propriedade CSS flex-direction define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido).
+  COLOCANDO A FORMA EM QUE ELES VÃO FICAR NESSE CASO FICARÁ EM COLUNA  */
+  flex-direction: column;
+}
+/* o header está dentro do Ambiente do display flex que inicia na linha 65 até  77 no layout.html= */
+header {
+  flex: 1; /*Indicando que o display flex vai ocupar uma fração*/
+  background-color: #ffa500; /*Colocando cor de fundo no título h1 linha 65 layout.html*/
+  font-family: "MonteCarlo", cursive; /* Colocando a fonte que foi pega no google fontes*/
+  color: white;
+}
+/*  FAZENDO FORMATAÇÃO DO H1 DA LINHA 66 DO LAYOUT.HTML DIRETO DO HEADER  */
+header h1 {
+  /*A propriedade CSS padding-left é um elemento que define o espaço de preenchimento obrigatório no lado esquerdo de um elemento. padding area é o espaço entre o conteúdo do elemento e a borda.  */
+  padding-left: 200px; /*Assim o texto do h1 vai se locomover de acordo com o seu gosto*/
+  /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left ) */
+  padding-top: 40px; /*Nessa aplicação ele vai jogar abaixo o h1 deslocando da margem superior e dos lados*/
+  font-size: 65px;
+}
+
+/* //////////////////// TRABALHANDO AGORA COM A ÁREA DOS LINKS DA LINHA 69 ATÉ 72 LAYOUT.HTMML */
+/* COLOCANDO OS LINKS DO LADO E COLOCANDO CENTRALIZADA USANDO O CAMINHO DO HEADER ONDE ELSA ESTÃO LOCALIZADAS */
+header nav {
+  /*Os links se encontra dentro do header e nav*/
+  width: 50%; /*A propriedade CSS width determina a largura da área de conteúdo de um elemento. A área de conteúdo fica dentro do preenchimento, da borda, e da margem de um elemento. As propriedades min-width (en-US) e max-width sobrescrevem o width .*/
+  margin-left: auto; /*Colocando as margens da esquerda automático*/
+  margin-right: auto; /*Colocando as margens da direita automático*/
+  /* Colocando os links centralizados um abaixo do outro no centro do cabeçalho*/
+  text-align: center; /*A propriedade CSS text-align descreve como conteúdo inline, como texto, é alinhado no elemento pai em bloco. text-align não controla o alinhamento de elementos em bloco, apenas o seu conteúdo inline.*/
+  margin-top: 40px; /*Colocando uma margen para dar distância do título e do menu de navegação*/
+}
+/* EDIÇÃO DA AULA 9º CSS */
+/* FORMATANDO O BOTÃO MENU E FECHAR DA LINHA 69 até 77 DO LAYAUT.HTML */
+/*Formatando os dois id*/
+header #menu,
+header nav #fechar {
+  display: none; /*formatando para não mostrar nada na tela*/
+}
+
+/* TIRANDO OS MARCADORES QUE FICA LISTANDO PERTO DOS LINKS DA LINHA 68 ATÉ 73 LAYOUT.HTML*/
+header nav ul {
+  list-style: none; /*tirando os marcadores dos links*/
+}
+/*  Agora trabalharemos com os itens da lista dos links 69 até 72 do layout.html */
+
+header nav ul li {
+  background-color: #f50057; /*Colocando cor para identificar o tamanho de ocupação do li onde tem os links de redes sociais*/
+  /* Colocando os botões de navegação do site um ao lado do outro em bloco */
+  display: inline-block; /*Um bloco inline é colocado inline (ou seja, na mesma linha do conteúdo adjacente), mas comporta-se como se fosse um bloco. Vamos adicionar conteúdo para ver como o bloco se comporta.*/
+  /* Colocando largura e altura trabalhando com padding incluso*/
+  padding: 20px 50px; /*topo e de base ficaram com 20px e o padding da direita e esquerda com 50px */
+  /* colocando um efeito na caixa do link do menu de navegação da página  */
+  transition: ease-in-out 0.3s; /*Colocando efeito na caixa dos links*/
+}
+/*  colocando efeito de cor na linha 69 até 72 colocando efeito nas caixas dos links na tag a */
+header nav ul li a {
+  color: white; /*Colocando cor nos links do menu*/
+  text-decoration: none; /*Tirando as listas debaixo do nome do menu*/
+  font-family: "Staatliches", cursive; /*Colocando uma fonte para o menu*/
+  font-size: 13pt; /*colocando tamanho da fonte do menu*/
+  /*  Comando para ordena se todas as letras ficaram maiúsculas ou só a primeira é várias opções */
+  text-transform: capitalize;
+}
+/*  Formatação da tag a ao passar o mouse por cima deve aparecer cor diferente no menu da linha 69 até 72 do layout.html */
+header nav ul li:hover {
+  /*formatando a quando chegar em li link do menu da página*/
+  background-color: #ff4500; /* Colocando efeito de cor na caixa ao passar sobre o menu de link*/
+}
+/*  Modificando também a cor da letra ao passar o mouse sobre a caixa de link de menu da página */
+header nav ul li:hover > a {
+  color: yellow; /*Colocando cor na tag a do menu de links de navegação da página*/
+
+  /* //////////////////// FINALIZANDO A ÁREA DOS LINKS DA LINHA 69 ATÉ 72 LAYOUT.HTMML */
+}
+/* //////////////////// INICIANDO A AREA DO MAIN DA LINHA 89 E 90 LAYOUT.HTMML */
+
+/*Resumo. O elemento <main> define o conteúdo principal dentro do <body> em seu documento ou aplicação.
+Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. ... Autores não devem incluir mais de um elemento main no mesmo documento */
+
+/*O elemento de divisão HTML <div> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar ...
+O atributo global (#)dir define um identificador exclusivo (ID) que deve ser único por todo o documento. Seu objetivo é identificar o elemento ao navegar por âncoras (usando um identificador de fragmento), quando utilizar scripts ou estilizando (com CSS). -->*/
+
+main {
+  flex: 1; /*O main por está no body ele é totalmente flexivel*/
+}
+
+main #painel {
+  height: 400px; /*Colocando altura no painel*/
+  background-image: url(../img/layout1.jpg); /* Colocando background de imagem de painel */
+  background-size: 100%; /*Colocamos aqui o tamanho da imagem de painel*/
+  background-position: 0px -160px; /*Fazendo a imagem subir*/
+}
+
+/* //////////////////// FINALIZANDO A AREA DO MAIN DA LINHA 98 E 122 LAYOUT.HTMML */
+
+footer {
+  flex: 1; /*O footer por está no body ele é totalmente flexivel*/
+  display: flex;
+  flex-direction: row; /*A propriedade flex-direction permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal. Definindo a propriedade flex-direction como row-reverse (linha reversa) ainda teremos os elementos dispostos em uma linha, entretanto, as linhas inicial e final serão trocadas.*/
+  background-color: #ffa500; /*aplicando cor no rodapé*/
+  font-family: "Staatliches", cursive;
+  padding: 50px; /*Colocando uma margen interna*/
+  font-size: 10pt; /*Colocando o tamanho da fonte*/
+}
+/* Agora formataremos as redes sociais dentro do footer */
+footer #redes,
+footer #end {
+  flex: 1;
+  color: #ffffff;
+  font-size: 13pt;
+}
+/* alinhando o endereço do footer */
+footer #end {
+  text-align: right;
+  padding-right: 30px;
+}
+/* modificando e formatando os icones e tirando marcação dos iconis */
+footer #redes ul {
+  list-style: none; /*tirando as marcações dos ícones*/
+}
+/* Alinhando o li um ao lado do outro */
+footer #redes ul li {
+  display: inline-block; /*Um bloco inline é colocado inline (ou seja, na mesma linha do conteúdo adjacente), mas comporta-se como se fosse um bloco. Vamos adicionar conteúdo para ver como o bloco se comporta.*/
+}
+/*  Fazendo o link ter uma cor diferente */
+footer #redes ul li a {
+  color: #f50057;
+  text-decoration: none;
+}
+/* Formatando o iconis do footer do rodapé */
+footer #redes ul li a i {
+  font-size: 30px;
+  color: #f50057;
+  margin: 10px;
+}
+/*##########################################################################################
+==================== FIM DA FORMATAÇÃO BASE DA PÁGINA LAYOUT.HTML====================== 
+##########################################################################################*/
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/*___________________________________________________________________________________________ 
+*********************** INICIANDO A RESPONSIVIDADE DOS BREAKPOINTS DA PÁGINA LAYOUT.HTML*********************
+____________________________________________________________________________________________
+ FAZENDO RESPONSIVIDADE DA PÁGINA LAYOUT.HTML USANDO AS AREAS DO FOOTER (RODAPÉ), NAV (NAVEGAÇÃO DE LINKS DE NAVEGAÇÃO DA PÁGINA PARA OUTRA).
+E A AREA DO HEADER H1 DO CABEÇALHO E O MAIN DO PAINEL */
+
+/* EDIÇÃO DA AULA 9º CSS  FOI COPIADO PARA TER O MESMO EFEITO DO MENU COM JAVA QUE O TABLET. COPIANDO DO HEADER NAV ATÉ O BOTÃO FECHAR DA RESOLUÇÃO 576 DO CSS MAS TEM QUE AJUSTA AS OUTRAS CONFIGURAÇÕES*/
+/* BREAK POINTS PARA TELA DE SMARTPHONES */
+@media (min-width: 0px) and (max-width: 575.98px) {
+  /* EDIÇÃO DA AULA 9º CSS COPIANDO ESSAS CONFIGURAÇÃO NÃO PRECISAMOS MODIFICAR ESSAS RESOLUÇÃO JÁ PRONTA DO header h1 até o main#painel */
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
+  /* EDIÇÃO DA AULA 9º CSS  FOI COPIADO DA RESOLUÇÃO 576 E COLADO E MODIFICADO PARA UMA RESOLUÇÃO DIFERENTE 576 DO CSS MAS TEM QUE AJUSTA AS OUTRAS CONFIGURAÇÕES*/
+  /* Edição de continuação da aula 9º CSS */
+  /* Trabalhando com o main do painel da foto linha 90 layout.html */
+  main #painel {
+    height: 100px; /*Depois de copiar e colar modificamos para outro tamanho*/
+    background-position: 0px -20px; /* Depois de copiar e colar modificamos a psição para menor tamanho*/
+  }
+
+  header nav {
+    /* background-color: #ffc107; Assim vai gerar uma cor em sua volta do nav link de navegação da página */
+    height: 100vh; /*usando esse modo , vai abrir o campo de cor do background-color maior */
+    position: fixed; /*Fazendo ele descolar para uma parte da tela e tornar o lugar mais livre*/
+    /*Colocando a barra do nav da navegação dos menus no top superior e do lado de fora à esquerda do navegador*/
+    top: -40px; /*Colocando ao topo*/
+    left: -250px; /*reduzindo o tamanho da barra do nav para ele sumir da tela quando chega nessa resolução de tablet*/
+    width: 120px; /*Modificando a largura do menu*/
+    padding-top: 100px; /*margin de topo para os links fiquem mais abaixo*/
+    text-align: center; /*Colocando as letras dos menus em left, right ou center é opcional*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* Trabalhando agora com a caixa li do header da linha 69 até 72 do layout.html*/
+  header nav ul li {
+    display: block; /* Para ficar um abaixo do outro*/
+    padding-left: 10px; /*colocando largura da esquerda*/
+    padding-right: 10px; /*colocando largura da direita*/
+    background-color: #f50057; /*Colocando uma cor de fundo nas caixas*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* Formatando (a)  letra do link do menu de navegação da linha 69 at[e 72 do layout */
+  header nav ul li a {
+    color: white; /*Colocando as cores nas letras do menu*/
+    font-family: "Staatliches", cursive; /*Colocando uma fonte de letras*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* FORMATANDO O BOTÃO MENU E FECHAR DA LINHA 69 até 77 DO LAYAUT.HTML */
+  /*Formatando os dois id*/
+  header #menu,
+  header nav #fechar {
+    display: block; /*Formatando para os botões de menu e fechar aparecer em forma de bloco*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* FORMATANDO ESPECIFICAMENTE O BOTÃO DO MENU DA LINHA 69 DO LAYOUT.HTML */
+  header #menu {
+    position: fixed; /*Colocando uma posição fixa*/
+    top: 0; /*jogando o botão para o topo da página*/
+    left: 10px; /*Escolhendo posição para colocar o botão*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* FORMATANDO ESPECIFICAMENTE O BOTÃO DE FECHAR DO MENU DA LINHA 76 DO LAYOUT.HTML */
+  header nav #fechar {
+    position: absolute; /*Colocando uma posição fixa*/
+    top: 95px; /*jogando o botão para o topo da página*/
+    right: 1px; /*Escolhendo posição para colocar o botão*/
+  }
+}
+/*///////////////////////////////////////////////////////////////////////////  */
+/* BREAK POINTS PARA TELA DE TABLETS */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* colocando breakpoints no h1 título da linha 66 layout.html*/
+  header h1 {
+    padding: 0;
+    text-align: center;
+  }
+  /* Edição de continuação da aula 9º CSS */
+  /* Trabalhando com o main do painel da foto linha 90 layout.html */
+  main #painel {
+    height: 250px; /*Regulando Altura do painel da imagems*/
+    background-position: 0px -100px; /*Copiamos e colamos essas posições lá da linha 108 deste css e colocamos -100 para ficar mais alinhado*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* trabalhando com o nav os links de navegação da página  */
+  header nav {
+    /* background-color: #ffc107; Assim vai gerar uma cor em sua volta do nav link de navegação da página */
+    height: 100vh; /*usando esse modo , vai abrir o campo de cor do background-color maior */
+    position: fixed; /*Fazendo ele descolar para uma parte da tela e tornar o lugar mais livre*/
+    /*Colocando a barra do nav da navegação dos menus no top superior e do lado de fora à esquerda do navegador*/
+    top: -40px; /*Colocando ao topo*/
+    left: -250px; /*reduzindo o tamanho da barra do nav para ele sumir da tela quando chega nessa resolução de tablet*/
+    width: 120px; /*Modificando a largura do menu*/
+    padding-top: 100px; /*margin de topo para os links fiquem mais abaixo*/
+    text-align: center; /*Colocando as letras dos menus em left, right ou center é opcional*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* Trabalhando agora com a caixa li do header da linha 69 até 72 do layout.html*/
+  header nav ul li {
+    display: block; /* Para ficar um abaixo do outro*/
+    padding-left: 10px; /*colocando largura da esquerda*/
+    padding-right: 10px; /*colocando largura da direita*/
+    background-color: #f50057; /*Colocando uma cor de fundo nas caixas*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* Formatando (a)  letra do link do menu de navegação da linha 69 at[e 72 do layout */
+  header nav ul li a {
+    color: white; /*Colocando as cores nas letras do menu*/
+    font-family: "Staatliches", cursive; /*Colocando uma fonte de letras*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* FORMATANDO O BOTÃO MENU E FECHAR DA LINHA 69 até 77 DO LAYAUT.HTML */
+  /*Formatando os dois id*/
+  header #menu,
+  header nav #fechar {
+    display: block; /*Formatando para os botões de menu e fechar aparecer em forma de bloco*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* FORMATANDO ESPECIFICAMENTE O BOTÃO DO MENU DA LINHA 69 DO LAYOUT.HTML */
+  header #menu {
+    position: fixed; /*Colocando uma posição fixa*/
+    top: 0; /*jogando o botão para o topo da página*/
+    left: 10px; /*Escolhendo posição para colocar o botão*/
+  }
+  /* EDIÇÃO DA AULA 9º CSS */
+  /* FORMATANDO ESPECIFICAMENTE O BOTÃO DE FECHAR DO MENU DA LINHA 76 DO LAYOUT.HTML */
+  header nav #fechar {
+    position: absolute; /*Colocando uma posição fixa*/
+    top: 95px; /*jogando o botão para o topo da página*/
+    right: 1px; /*Escolhendo posição para colocar o botão*/
+  }
+}
+/*///////////////////////////////////////////////////////////////////////////  */
+/* BREAK POINTS PARA TELA DE DESKTOP */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*modificando a largura do nav dos menus  */
+  header nav {
+    width: 80%;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/*____________________________AULA 8 FINALIZADA___________________________________________________ */
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/*____________________________INICIANDO AULA 9___________________________________________________ */

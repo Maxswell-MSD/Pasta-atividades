@@ -1,0 +1,281 @@
+<!-- ========================================================================================================== -->
+<!-- ################ INICIANDO A ESTRUTURA BASE DO PROJETO ################### -->
+ 
+
+
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ki massa</title>
+<!-- ========================================================================================================== -->
+<!-- ################ INICIANDO AREA DE CRIAÇÃO DE LINKS COM CSS, FONTES DO GOOGLE E ICONIS ################### -->
+    
+    <!-- Link de css para o arquivo styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+ 
+    <!-- Basta pesquisar google fontes  -->
+    <!-- Link de css para a formatação de fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Staatliches&family=Style+Script&display=swap" rel="stylesheet">
+
+    
+
+<!-- Link de icones usando fonte https://fontawesome.com  Mas observe sempre a indicação
+de onde deve colocar o link. ele muda conforme o roteiro ou fontes de outros sites-->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+
+<!-- ////////////////////// FINALIZANDO A AREA DE LINKS CSS, FONTES DO GOOGLE E ICONIS ////////////////////// -->
+<!-- ========================================================================================================= -->
+
+
+</head>
+                
+<!-- ===================================FIM DO HEAD====================================================================== 
+
+
+    ========================================================================================================== 
+            ################ INICIANDO AREA DO CORPO DO SITE O BODY############################### ################### -->
+
+
+<body>
+    <!-- APÓS FAZER A COLAGEM DE FONTES DE LINK QUE ESTÁ NA LINHA 25 LAYOUT.HTML PODEMOS PEGAR O LINK DO ICONIS
+    DENTRO DO SITE FONTE E COLAR AQUI NO BODY E ACRESCENTAMOS O TAMANHO COM STYLE="font-size: 50PX;" OU FORMATAMOS PELO CSS -->
+    <!-- <i class="fab fa-facebook-square"></i>
+    <i class="fas fa-phone-square-alt"></i>
+    <i class="fas fa-at"></i>               FEITO O TESTE PARA VER SE O LINK PODE APAGA ESSES LINKS-->
+    <!-- <i class="fab fa-whatsapp-square"></i> --> 
+
+
+    <!-- ========================================================================================================== 
+ ################ INICIANDO AREA DOS ELEMENTOS DO heade    ############################### ###################
+
+O elemento HTML <heade> representa um grupo de suporte introdutório ou navegacional.Pode 
+conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
+
+ USANDO O ATALHO heade(> INDICA COLOCANDO DENTRO DO header uma função) header>h1(+indicando que abaixo do h1 tera um nav)
+header>h1+nav>(ul indicando uma lista não ordenada)header>h1+nav>ul>(li indicando lista)header>h1+nav>ul>li>(a dentro de li recebendo
+a tag a.  comando ficará header>h1+nav>ul>li>a ou header:h1+nav>ul>li*3>a -->
+
+<header>
+    <h1>Ki massa </h1>
+    <!--EDIÇÃO DA AULA 9º CSS --> 
+    <!--  Colocando aqui o botão do menu  -->
+   <!--<span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ), ou para compartilhar valores de atributos como lang  -->
+    <span id="menu">
+
+<!-- Colocando javaScript para o botão abrir ao clicar nele  colocando após as aspas (">)antes do fechamento do(</i> os seguintes codigos abaixo) -->
+      <!--Colamos aqui o botão do menu-->
+      <i class="fas fa-ellipsis-v" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>         
+
+    </span>
+
+    <nav>
+         <!--EDIÇÃO DA AULA 9º CSS --> 
+        <!--  Colocando aqui o botão de fechar menu  -->
+        <span id="fechar">
+      <!-- Colocando javaScript para o botão de fechar  ao clicar nele  colocando após as aspas (">)antes do fechamento do(</i> os seguintes codigos abaixo) -->
+     
+            <i class="fas fa-times" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+        </span>
+        
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="servicos.html">serviços</a></li>
+            <li><a href="cardapio.html">cardápio</a></li>
+            <li><a href="contato.html">contato</a></li>
+           
+           
+        </ul>
+    </nav>
+
+    <!--################ FINAL DOS ELEMENTOS DO heade    ################################################# -->
+</header>
+<!-- ////////////////////// COLOCANDO NO PAINEL UMA IMAGEM NO CABEÇALHO NA AREA DE DECORAÇÃO ////////////////////////////////////// 
+ ################ INICIANDO MAIN PARA DECORAÇÃO    ############################### ###################
+
+    Resumo. O elemento <main> define o conteúdo principal dentro do <body> em seu documento ou aplicação.
+ Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. ... Autores não devem incluir mais de um elemento main no mesmo documento 
+
+ COLOCANDO O CÓDIGO main>div#painel (painel é um exemplo de qualquer nome que se pode dar de identificação)
+ 
+ O elemento de divisão HTML <div> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar ...
+O atributo global (#)dir define um identificador exclusivo (ID) que deve ser único por todo o documento. Seu objetivo é identificar o elemento ao navegar por âncoras (usando um identificador de fragmento), quando utilizar scripts ou estilizando (com CSS). -->
+
+<main>
+    <div id="painel"> </div>
+
+    <!-- 10º Aula formatando servicos.html -->
+    <!-- COLOCANDO ATALHO PARA CRIAÇÃO DO CORPO DA EDIÇÃO DO SERVICOS.HTML section#*3>h2 -->
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    <!-- //////////////////////////// INICIANDO AREA #Reservas////////////////////////// -->
+    
+    <section id="reservas">
+        <h2>Para o seu final de semana</h2>
+        <!-- 10º Aula formatando servicos.html -->
+        <!-- Colocando um pequeno texto -->
+        <h3> Fazemos o seu evento especial acontecer</h3>
+        <!-- Colocando div para corpo de imagens para o id reservas usando atalho div>img*4 servicos.html -->
+    <div>
+        <img src="img/reserva2.jpg" alt="salão1">
+        <img src="img/reserva1.jpg" alt="salão2">
+        <img src="img/reserva3.jpg" alt="salão3">
+        <img src="img/reserva4.jpg" alt="sala reservada para empresa 4">
+        <img src="img/reserva5.jpg" alt="salão5">
+        <img src="img/reserva6.jpg" alt="salão6">
+    </div>
+    <!--(((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))  -->
+    <!-- ((((((((((((((((((((()))))))))) FINAL DO #RESERVAS )))))))))))))))))))))))) -->
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    </section>
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    <!-- //////////////////////////// INICIANDO AREA #PIZZAS ////////////////////////// -->
+     <!-- 10º Aula formatando servicos.html -->
+    <section id="celebrando">
+        <h2>Pizzas para sua família</h2>
+        <h3> Comemore com os amigos e sua família </h3>
+        <!-- Colocando foto de destaque devemos usar o atalho div#2 para criar id -->
+       <!-- dentro da raiz #pizza colocaremos uma id para foto de destaque -->
+        <!--10º Aula separando a #fotodestaque do lado esquerdo e a #gotominiatura1 do lado esquerdo criaremos mais uma id #conteudo e colocando dentro dessa div  -->
+       <div id="conteudo">
+
+        <div id="fotodestaque">
+            <img src="img/celebrando7.jpg" alt="celebração7">
+
+       </div>
+       <!-- Colocando outras fotos separadamente da foto de destaque da #fotodestaque -->
+       <div id="fotominiatura1">
+        <img src="img/celebrando1.jpg" alt="celebração1">
+        <img src="img/celebrando2.jpg" alt="celebração2">
+        <img src="img/celebrando3.jpg" alt="celebração3">
+        <img src="img/celebrando4.jpg" alt="celebração4">
+        <img src="img/celebrando6.jpg" alt="celebração6">
+        <img src="img/celebrando5.jpg" alt="celebração5">
+    
+    </div>
+</div> 
+    <!--(((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))  -->
+    <!-- ((((((((((((((((((((()))))))))) FINAL DA #celebrando #fotodestaque #fotominiatura )))))))))))))))))))))))) -->
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    </section>
+<!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    <!-- //////////////////////////// INICIANDO AREA #pizza ////////////////////////// -->
+     <!-- 10º Aula formatando servicos.html -->
+    
+
+    <section id="pizza">
+        <h2>Pizzas ao seu gosto</h2>
+        <h3>Diversos Sabores especiais</h3>
+        <!-- Estas imagens teram efeito de inclinação usando atalho div>img*5 -->
+        <div>
+            <img src="img/p1.jpg" alt="pizza">
+            <img src="img/p2.jpg" alt="pizza">
+            <img src="img/p3.jpg" alt="pizza">
+            <img src="img/p4.jpg" alt="pizza">
+            <img src="img/p5.jpg" alt="pizza">
+            <img src="img/p6.jpg" alt="pizzavegetariana2">
+        </div>
+<!--(((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))  -->
+    <!-- ((((((((((((((((((((()))))))))) FINAL DA #pizza )))))))))))))))))))))))) -->
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    
+    </section>
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    <!-- //////////////////////////// INICIANDO AREA #diversos ////////////////////////// -->
+     <!-- 10º Aula formatando servicos.html -->
+    
+    <section id="diversos">
+        <h2>Variedades para o seu melhor atendimento</h2>
+        <h3>Opções para o seu lanche</h3>
+        <!-- Colocando div e dentro dela um pequeno texto de descrição para cada imagen usando o comando div#area>div>img+h4 -->
+        <div id="variedade">
+            <div>
+                <img src="img/calzone4.jpg" alt="calzone3">
+                <h4>Calzones</h4>
+
+            
+        </div>
+        <div>
+            <img src="img/pizza4queijo2.jpg" alt="quatro-queijo">
+                <h4>Pizzas</h4>
+                
+        </div>
+        <div>
+            
+                <img src="img/conjuntoesfirra4.jpg" alt="Conjunto-esfirras">
+                <h4>Esfirras.</h4>
+            
+            </div> 
+        <div>
+                <img src="img/salgados4.jpg" alt="salgados">
+                <h4>Salgados</h4>
+                
+        </div>
+    </section>
+</section>
+    <section id="salgados">
+        <h2>Salgados para festas</h2>
+        <!-- Será a mesma formatação do primeiro #reservas -->
+       <div>
+        <img src="img/kibe2.jpg" alt="kibe2">
+        <img src="img/coxinha2.jpg" alt="coxinha2">
+        <img src="img/bolaqueijo2.jpg" alt="bolaqueijo2">
+        <img src="img/enroladinho1.jpg" alt="enroladinho1">
+        <img src="img/pastel2.jpg" alt="pastel2">
+
+    </div>
+    </section>
+
+
+
+        <!--(((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))  -->
+    <!-- ((((((((((((((((((((()))))))))) FINAL DO #diversos )))))))))))))))))))))))) -->
+    <!-- (((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))) -->
+    
+    
+
+
+    <!--################ FIM DO MAIN PARA DECORAÇÃO    ############################### ###################-->
+</main>
+<!--################################# INICIANDO FOOTER DE EDIÇÃO DO RODAPÉ    ############################### ###################
+O elemento HTML de Rodapé (<footer>) representa um rodapé para o seu sectioning content (conteúdo de seção) mais próximo ou sectioning root elemento (ou seja, seu parente mais próximo <article> , <aside> , <nav> , <section> , <blockquote> , <body> , <details> , <fieldset> , <figure> , <td> (en-US)).
+NESSE CÓDIGO FOI USADO ESSE SEGUINTE ATALHO DA CRIAÇÃO DO CORPO DE RODAPÉ footer>div#*2 -->
+<footer>
+    <div id="end">
+    Rua Três Coquinhos 234 - São Paulo - SP <br>
+    Tel: 11 7654-5880 - contato@Kimassa.com
+    
+    <div id="redes">
+<!-- O Elemento HTML de Navegação ( <nav> ) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. ... 
+    Um documento pode ter vários elementos <nav> , por exemplo, um para navegação no site e outro para navegação dentro da página -->
+    <!--INICIANDO OS LINKS DAS REDES SOCIAIS USANDO OS CÓDIGO DE ATALHO PARA CRIAÇÃO DOS LINKS nav>ul>li#3>a  -->
+       <!-- após colocar o endereço da rede social devemos colocar entre os <> o link dos iconis das redes -->
+    <nav>
+            <ul>
+                <li><a href="http://www.facebook.com."><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="http://www.instagram.com."><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+                
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+
+
+    <!--################################# FINAL DO FOOTER DE EDIÇÃO DO RODAPÉ    ############################### ################### -->
+</footer>
+
+
+</body>
+
+<!-- ////////////////////// FINALIZANDO A AREA DO CORPO DO SITE DO BODY ////////////////////////////////////// -->
+
+
+</html>
