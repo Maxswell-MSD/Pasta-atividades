@@ -5,11 +5,6 @@
 -👨‍🎓 Assuntos de estudos atualmente - Html , CSS, JavaScript iniciado em 06/2021<br>
 -📧 E-mail : maxswellsousadiniz@yahoo.com
 
-## Projeto do Site Kimassa 🍕🍕🍕🍕🥟🥟🥟🧆🧆🧆🍔🍔
--💻 Trabalhando conceitos e suas aplicações iniciado em 07/2021
-- Para um pequeno projeto;
-- Plataforma para explorar todos os erros possíveis para Solucionar os problemas;
-- Melhorias do site Kimassa e integração com conceitos de estudos Css e JavaScript;
 
 ## Feramentas usadas no meu Dia a Dia
 
