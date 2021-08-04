@@ -2,7 +2,7 @@
 -🤓 Autor: Maxswell Sousa Diniz <br>
 -💻 Cursando atualmente Técnico em Informática - Senac Tatuapé - SP <br>
 -🙌 Iniciado em 08/2020 até 03/2022<br>
--👨‍🎓 Assuntos de estudos atualmente - Html , CSS, JavaScript iniciado em 06/2021<br>
+-👨‍🎓 Assuntos de estudos atualmente - Html5 , CSS3, JavaScript iniciado em 06/2021<br>
 -📧 E-mail : maxswellsousadiniz@yahoo.com
 
 
