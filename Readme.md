@@ -1,4 +1,4 @@
-## Seja Bem-vindo 
+## Seja Bem-vindo ao Repositório de Exercícios e anotações extras 
 -🤓 Autor: Maxswell Sousa Diniz <br>
 -💻 Cursando atualmente Técnico em Informática - Senac Tatuapé - SP <br>
 -🙌 Iniciado em 08/2020 até 03/2022<br>
