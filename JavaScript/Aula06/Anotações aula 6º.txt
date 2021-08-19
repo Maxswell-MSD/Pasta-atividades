@@ -1,0 +1,6 @@
+Anotações da aula 6:
+
+Cadastrto no site Themoviedb é um site onde buscamos informações sobre filmes e séries somente dados e informações
+Essas estruturas estão no formato de JSON cujo é uma listagem de objetos como está no site themoviedb
+
+https://www.themoviedb.org/

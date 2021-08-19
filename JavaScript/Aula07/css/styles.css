@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+#estrutura {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 10px auto;
+}
+#estrutura div {
+  width: 20%;
+  margin: 10px;
+  background-color: white;
+}
+#estrutura div img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#estrutura div h2 {
+  font-family: arial;
+  font-size: 10pt;
+}
+#estrutura div p {
+  font-family: arial;
+  font-size: 8pt;
+  text-align: right;
+  margin-bottom: 50px;
+}
