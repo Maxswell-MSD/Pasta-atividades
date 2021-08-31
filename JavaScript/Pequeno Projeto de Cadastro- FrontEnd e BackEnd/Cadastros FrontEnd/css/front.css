@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ff0099; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #493240,
+    #ff0099
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #493240,
+    #ff0099
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* * W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  padding: 80px 0px;
+  border-bottom: 1px solid #eee;
+  background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #fdeff9,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #fdeff9,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header h1 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 50pt;
+  font-weight: lighter;
+  color: white;
+}
+nav {
+  padding: 20px 0px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  width: 115px;
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+}
+nav ul li a {
+  font-family: arial;
+  text-decoration: none;
+  color: white;
+  border: px solid black;
+  padding: 15px;
+  font-size: 15pt;
+  background: #5f2c82; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #49a09d,
+    #5f2c82
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #49a09d, #5f2c82);
+}
+main {
+  margin: 5px 10px;
+  padding: 10px;
+  color: white;
+  font-size: 15pt;
+}
+main #container {
+  font-family: arial;
+  line-height: 30pt;
+  text-align: justify;
+}
+main #container img {
+  display: block;
+  width: 900px;
+  height: 500px;
+  margin: 1px auto;
+}
+/* ------------ Formulário de cadastro de produtos------------- */
+main #container #cadastro {
+  width: 50%;
+  padding: 30px;
+  background: #5f2c82; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #49a09d,
+    #5f2c82
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #49a09d,
+    #5f2c82
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0 auto;
+}
+main #container #cadastro input,
+main #container #cadastro textarea,
+main #container #cadastro button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* ---------------- lista de produtos ------------------------------- */
+
+main #container #listarnoticias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 0 auto;
+}
+main #container #listarnoticias #noticia {
+  width: 30%;
+  height: auto;
+  text-align: center;
+  border: 1px solid green;
+  margin: 10px;
+}
+main #container #linha {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  width: 450px;
+  margin: 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  margin-left: 500px;
+}
+main #container #linha #foto {
+  flex: 0.2;
+}
+main #container #linha #titulo,
+main #container #linha #datapublicacao,
+main #container #linha #texto,
+main #container #linha #autor {
+  flex: 1;
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+}
+main #container #linha #nomeadm,
+main #container #linha #email,
+main #container #linha #loginusuario,
+main #container #linha #senhausuario {
+  flex: 1;
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+}
+main #container #linha #nomecolaborador,
+main #container #linha #telefone,
+main #container #linha #email,
+main #container #linha #endereco,
+main #container #linha #cpf,
+main #container #linha #usuario,
+main #container #linha #datacadastro,
+main #container #linha #cargo,
+main #container #linha #senha,
+main #container #linha #Sexo,
+main #container #linha #nascimento,
+main #container #linha #rg,
+main #container #linha #estadocivil,
+main #container #linha #remuneracao {
+  flex: 1;
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+}
+main #container #linha #foto img {
+  width: 100%;
+  height: auto;
+}
+#fundo {
+  width: 500px;
+  height: 500px;
+  margin: 800px auto;
+  background-image: url("../images/fundo.gif");
+  background-position: center center;
+  font-family: arial;
+  font-size: 20pt;
+  text-align: center;
+}
+main #container ul li a {
+  background-color: black;
+  color: white;
+  font-family: arial;
+  font-size: 15pt;
+  border: 1px solid white;
+  padding: 50px;
+}
+main #container ul li {
+  width: 600px;
+  padding: 50px;
+  margin: 1px;
+}
+main form {
+  width: 40%;
+  padding: 20px;
+  margin: 30px auto;
+}
+main form input,
+main form textarea {
+  width: 90%;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+main textarea {
+  height: 200px;
+}
+main form input[type="submit"] {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}

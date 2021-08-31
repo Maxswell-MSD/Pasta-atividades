@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/front.css">
+</head>
+
+<body>
+
+    
+        <header>
+            <h1>Cadastro de Login de Administradores</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="noticias.html">Noticia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="restrito.html" class="restrito">Restrito</a></li>
+            </ul>
+    </nav>
+    <main>
+        <div id="container">
+            <form onsubmit="return false" id="cadastro">
+                <input type="text" id="nomeadm" placeholder="Nome do administrador" required>
+                <input type="text" id="email" placeholder="E-mail" required>
+                <input type="text" id="loginusuario" placeholder="Usuario" required>
+                <input type="text" id="senhausuario" placeholder="senha" required>
+                <button id="btnCadastrar">Criar Administrador</button>
+            </form>
+
+        </div>
+    </main>
+    <script src="js/cadastraradministradores.js"></script>
+</body>
+
+</html>
