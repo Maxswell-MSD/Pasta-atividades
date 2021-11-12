@@ -2,10 +2,10 @@
 -🤓 Autor: Maxswell Sousa Diniz <br>
 -💻 Cursando atualmente Técnico em Informática - Senac Tatuapé - SP <br>
 -🙌 Iniciado em 08/2020 até 03/2022<br>
--👨‍🎓 Assuntos de estudos atualmente - Estudo de JavaScript 06/2021<br>
+-👨‍🎓 Assuntos de estudos atualmente - Estudo de Desenvolvimento Mobile e BackEnd 11/2021<br>
 -📧 E-mail : maxswellsousadiniz@yahoo.com
 
-## Estudo de javaScript
+## Pequena aplicação em React native para desenvolvimento de App.
 
 ## Ferramentas usadas no meu Dia a Dia
 
